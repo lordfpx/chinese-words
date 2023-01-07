@@ -8,6 +8,15 @@ import prepareObj from "./prepare-obj";
 import tableify from "tableify";
 import Tablesort from "tablesort";
 
+function replaceAccent(string) {
+	return string
+		.replace(/[āáǎà]/g, "a")
+		.replace(/[ēéěè]/g, "e")
+		.replace(/[īíǐì]/g, "i")
+		.replace(/[ōóǒò]/g, "o")
+		.replace(/[ūúǔù]/g, "u");
+}
+
 const tableWrapperNode = document.querySelector("[data-table]");
 tableWrapperNode.innerHTML = tableify(prepareObj(vocabulary));
 
@@ -34,17 +43,16 @@ document.addEventListener("click", (ev) => {
 // filter
 const inputNode = document.querySelector("[data-table-filter]");
 const unfilterNode = document.querySelector("[data-table-unfilter]");
-const trNode = tableWrapperNode.querySelectorAll("tbody tr");
+const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
+const sanitizedWords = trNodes.map((node) => replaceAccent(node.textContent));
 
 inputNode.addEventListener("input", (ev) => {
-	trNode.forEach(
-		(node) => (node.hidden = !node.textContent.includes(ev.target.value))
+	sanitizedWords.forEach(
+		(word, index) => (trNodes[index].hidden = !word.includes(ev.target.value))
 	);
-	unfilterNode.hidden = !ev.target.value;
 });
 
 unfilterNode.addEventListener("click", () => {
-	trNode.forEach((node) => (node.hidden = false));
+	trNodes.forEach((node) => (node.hidden = false));
 	inputNode.value = "";
-	unfilterNode.hidden = true;
 });
