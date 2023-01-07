@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap");
+
+:root {
+	--iframe-height: 35vh;
+	--filter-height: 50px;
+}
+
+body {
+	padding-bottom: var(--iframe-height);
+}
+
+.filter {
+	height: var(--filter-height);
+}
+
+[data-details] {
+	height: var(--iframe-height);
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	position: relative;
+	background-color: #fff;
+}
+
+thead {
+	position: sticky;
+	top: var(--filter-height);
+	width: 100%;
+	background-color: #ddd;
+	box-shadow: 0 2px 6px 0 rgba(#000, 0.5);
+}
+
+table,
+th,
+td {
+	width: 100%;
+}
+
+td {
+	font-size: 1.1rem;
+
+	&:nth-child(1) {
+		button {
+			font-family: "Noto Serif TC", serif;
+			letter-spacing: 0.3em;
+			font-size: 3rem;
+			color: #009;
+			margin-right: 5px;
+			border: none;
+			background-color: transparent;
+			padding: 0;
+			margin: 0;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&:nth-child(2) {
+		font-size: 1.5rem;
+	}
+
+	&:nth-child(1),
+	&:nth-child(2) {
+		white-space: nowrap;
+	}
+
+	&:nth-child(4) {
+		max-width: 5%;
+	}
+}
+
+th,
+td {
+	width: 0;
+	padding: 15px;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+tr:hover {
+	background-color: #ddd;
+}

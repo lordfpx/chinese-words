@@ -1,0 +1,28 @@
+{
+  "name": "chinese-words",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "postcss": "^8.4.20",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.1",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "tableify": "^1.1.1",
+    "tablesort": "^5.3.0"
+  }
+}

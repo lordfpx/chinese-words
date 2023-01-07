@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chinese Words</title>
+		<meta
+			name="description"
+			content="Chinese Words - Your dictionary for traditional Chinese"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body class="bg-black">
+		<div
+			class="filter flex justify-center items-center sticky top-0 bg-black text-sm z-10"
+		>
+			<input
+				type="text"
+				placeholder="Filter..."
+				data-table-filter="data-table-filter"
+				aria-label="Filter"
+			/>
+			<button
+				type="button"
+				data-table-unfilter="data-table-unfilter"
+				hidden="hidden"
+			>
+				Unfilter
+			</button>
+		</div>
+
+		<div data-table="data-table" class="relative"></div>
+
+		<div
+			data-details="data-details"
+			hidden="hidden"
+			class="bg-black fixed bottom-0 left-0 w-full"
+		>
+			<iframe
+				data-details-iframe="data-details-iframe"
+				class="border-0 absolute top-0 left-0 w-full h-full"
+			></iframe>
+
+			<button
+				type="button"
+				data-details-close="data-details-close"
+				class="absolute top-0 right-0 -translate-y-full font-bold p-3 bg-black text-white"
+			>
+				Close
+			</button>
+		</div>
+
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
