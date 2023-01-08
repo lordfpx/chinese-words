@@ -24,6 +24,10 @@ new Tablesort(document.querySelector("table"));
 
 const detailsNode = document.querySelector("[data-details]");
 const detailsIframeNode = document.querySelector("[data-details-iframe]");
+const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
+detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=${
+	trNodes[0].querySelector("[data-details-open]").textContent
+}`;
 
 document.addEventListener("click", (ev) => {
 	const openNode = ev.target.closest("[data-details-open]");
@@ -43,7 +47,6 @@ document.addEventListener("click", (ev) => {
 // filter
 const inputNode = document.querySelector("[data-table-filter]");
 const unfilterNode = document.querySelector("[data-table-unfilter]");
-const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
 const sanitizedWords = trNodes.map((node) => replaceAccent(node.textContent));
 
 inputNode.addEventListener("input", (ev) => {

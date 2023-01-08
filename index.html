@@ -20,43 +20,52 @@
 
 	<body class="bg-black">
 		<div
-			class="filter flex justify-center items-center sticky top-0 bg-black text-sm z-10"
+			class="filter flex justify-center items-center sticky top-0 bg-black text-sm z-10 p-2"
 		>
+			<h1
+				class="mr-4 lg:mr-8 text-white text-lg lg:text-3xl font-bold uppercase whitespace-nowrap"
+			>
+				Chinese Words
+			</h1>
 			<input
 				type="text"
 				placeholder="Filter..."
 				data-table-filter="data-table-filter"
 				aria-label="Filter"
-				class="p-2"
+				class="p-2 rounded-none min-w-0"
 			/>
 			<button
 				type="button"
 				data-table-unfilter="data-table-unfilter"
-				class="p-2 bg-slate-500 text-white"
+				class="px-2 py-2 lg:px-4 bg-slate-500 text-white font-bold"
 			>
 				Unfilter
 			</button>
 		</div>
 
-		<div data-table="data-table" class="relative"></div>
+		<div class="wrapper lg:flex">
+			<div
+				data-table="data-table"
+				class="relative overflow-auto min-w-0 w-full lg:w-3/5 lg:resize-x"
+			></div>
 
-		<div
-			data-details="data-details"
-			hidden="hidden"
-			class="bg-black fixed bottom-0 left-0 w-full"
-		>
-			<iframe
-				data-details-iframe="data-details-iframe"
-				class="border-0 absolute top-0 left-0 w-full h-full"
-			></iframe>
-
-			<button
-				type="button"
-				data-details-close="data-details-close"
-				class="absolute top-0 right-0 -translate-y-full font-bold p-3 bg-black text-white"
+			<div
+				data-details="data-details"
+				class="bg-black fixed bottom-0 left-0 w-full min-w-0 lg:w-2/5 lg:grow lg:relative lg:bottom-auto lg:left-auto lg:h-full"
 			>
-				Close
-			</button>
+				<iframe
+					data-details-iframe="data-details-iframe"
+					class="border-0 absolute top-0 left-0 w-full h-full"
+				></iframe>
+
+				<button
+					type="button"
+					data-details-close="data-details-close"
+					class="absolute top-0 right-0 -translate-y-full font-bold p-3 bg-black text-white lg:hidden"
+				>
+					Close
+				</button>
+			</div>
 		</div>
 
 		<script type="module" src="/src/main.js"></script>

@@ -9,82 +9,99 @@
 	--filter-height: 50px;
 }
 
-body {
-	padding-bottom: var(--iframe-height);
-}
+@layer base {
+	body {
+		padding-bottom: var(--iframe-height);
 
-.filter {
-	height: var(--filter-height);
-}
-
-[data-details] {
-	height: var(--iframe-height);
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	position: relative;
-	background-color: #fff;
-}
-
-thead {
-	position: sticky;
-	top: var(--filter-height);
-	width: 100%;
-	background-color: #ddd;
-	box-shadow: 0 2px 6px 0 rgba(#000, 0.5);
-}
-
-table,
-th,
-td {
-	width: 100%;
-}
-
-td {
-	font-size: 1.1rem;
-
-	&:nth-child(1) {
-		button {
-			font-family: "Noto Serif TC", serif;
-			letter-spacing: 0.3em;
-			font-size: 3rem;
-			color: #009;
-			margin-right: 5px;
-			border: none;
-			background-color: transparent;
-			padding: 0;
-			margin: 0;
-
-			&:hover {
-				text-decoration: underline;
-			}
+		@screen lg {
+			@apply pb-0;
 		}
 	}
 
-	&:nth-child(2) {
-		font-size: 1.5rem;
+	table {
+		@apply relative bg-white;
+		border-collapse: collapse;
+		border-spacing: 0;
 	}
 
-	&:nth-child(1),
-	&:nth-child(2) {
-		white-space: nowrap;
+	thead {
+		@apply sticky bg-slate-300 shadow-lg border-b-slate-900 uppercase top-0;
+
+		@screen lg {
+			top: 0;
+		}
 	}
 
-	&:nth-child(4) {
-		max-width: 5%;
+	table,
+	thead {
+		@apply w-full;
+	}
+
+	td {
+		font-size: 1.1rem;
+
+		&:nth-child(2) {
+			@apply text-base;
+		}
+
+		&:nth-child(1),
+		&:nth-child(2) {
+			@apply whitespace-nowrap;
+		}
+
+		&:nth-child(1) {
+			width: 30%;
+		}
+
+		&:nth-child(2) {
+			width: 20%;
+		}
+
+		&:nth-child(3) {
+			width: 30%;
+		}
+
+		&:nth-child(4) {
+			width: 10%;
+		}
+
+		&:nth-child(5) {
+			width: 10%;
+		}
+	}
+
+	th,
+	td {
+		@apply w-0 text-left p-4 border-b border-b-slate-300;
+	}
+
+	tbody tr:hover {
+		@apply bg-slate-100;
 	}
 }
 
-th,
-td {
-	width: 0;
-	padding: 15px;
-	border-bottom: 1px solid #ddd;
-	text-align: left;
-}
+@layer components {
+	.filter {
+		height: var(--filter-height);
+	}
 
-tr:hover {
-	background-color: #ddd;
+	[data-details] {
+		height: var(--iframe-height);
+	}
+
+	[data-details-open] {
+		@apply text-4xl mr-1 border-none text-blue-700 bg-transparent p-0;
+		font-family: "Noto Serif TC", serif;
+		letter-spacing: 0.3em;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	@screen lg {
+		.wrapper {
+			height: calc(100vh - var(--filter-height));
+		}
+	}
 }
