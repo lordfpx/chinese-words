@@ -18,7 +18,7 @@ function replaceAccent(string) {
 }
 
 // const optionsQueryParams = "&dmsm=0&wdrst=1&rfs=1&dhlm=0";
-const optionsQueryParams = "";
+const optionsQueryParams = "&wdrst=1";
 let isOpened = false;
 
 const tableWrapperNode = document.querySelector("[data-table]");
