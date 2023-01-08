@@ -13,6 +13,13 @@ export const vocabulary = [
 		type: "",
 		lesson: "",
 	},
+	{
+		char: "请问",
+		pinyin: "qǐng wèn",
+		eng: "Excuse me, may I ask...?",
+		type: "",
+		lesson: "",
+	},
 
 	// lesson 4
 	{
@@ -390,6 +397,55 @@ export const vocabulary = [
 		pinyin: "jiǔ",
 		eng: "9, nine",
 		type: "Num",
+		lesson: "7",
+	},
+	{
+		char: "十",
+		pinyin: "shí",
+		eng: "10, ten",
+		type: "Num",
+		lesson: "7",
+	},
+	{
+		char: "百",
+		pinyin: "bǎi",
+		eng: "100, hundred",
+		type: "Num",
+		lesson: "7",
+	},
+	{
+		char: "什麼時候",
+		pinyin: "shén me shíhòu",
+		eng: "when",
+		type: "",
+		lesson: "7",
+	},
+	{
+		char: "打電話",
+		pinyin: "dǎ diàn huà",
+		eng: "to make a phone call",
+		type: "V",
+		lesson: "7",
+	},
+	{
+		char: "幾號",
+		pinyin: "jǐ hào",
+		eng: "What is the phone number?",
+		type: "",
+		lesson: "7",
+	},
+	{
+		char: "好的",
+		pinyin: "hǎo de",
+		eng: "yes, okay",
+		type: "",
+		lesson: "7",
+	},
+	{
+		char: "不客氣",
+		pinyin: "bú kè qì",
+		eng: "You're welcome",
+		type: "",
 		lesson: "7",
 	},
 ];

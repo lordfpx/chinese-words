@@ -17,22 +17,32 @@ function replaceAccent(string) {
 		.replace(/[ūúǔù]/g, "u");
 }
 
-const tableWrapperNode = document.querySelector("[data-table]");
-tableWrapperNode.innerHTML = tableify(prepareObj(vocabulary));
-
-new Tablesort(document.querySelector("table"));
-
 // const optionsQueryParams = "&dmsm=0&wdrst=1&rfs=1&dhlm=0";
 const optionsQueryParams = "";
+let isOpened = false;
 
+const tableWrapperNode = document.querySelector("[data-table]");
+tableWrapperNode.innerHTML = tableify(prepareObj(vocabulary));
+new Tablesort(document.querySelector("table"));
+
+const inputNode = document.querySelector("[data-table-filter]");
+const unfilterNode = document.querySelector("[data-table-unfilter]");
 const detailsNode = document.querySelector("[data-details]");
 const detailsIframeNode = document.querySelector("[data-details-iframe]");
 const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
+
+const sanitizedWords = trNodes.map((node) => replaceAccent(node.textContent));
+
+// load iframe on the 1st word
 detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${
 	trNodes[0].querySelector("[data-details-open]").textContent
 }`;
 
-let isOpened = false;
+// iframe loaded
+detailsIframeNode.addEventListener("load", () => {
+	detailsIframeNode.style.opacity = 1;
+	inputNode.focus();
+});
 
 document.addEventListener("click", (ev) => {
 	const openNode = ev.target.closest("[data-details-open]");
@@ -41,10 +51,7 @@ document.addEventListener("click", (ev) => {
 	if (openNode) {
 		detailsIframeNode.style.opacity = 0;
 		detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${openNode.dataset.detailsOpen}`;
-		detailsIframeNode.addEventListener(
-			"load",
-			() => (detailsIframeNode.style.opacity = 1)
-		);
+
 		if (!isOpened) {
 			isOpened = true;
 			detailsNode.style.transform = "translateY(0)";
@@ -62,17 +69,32 @@ document.addEventListener("click", (ev) => {
 });
 
 // filter
-const inputNode = document.querySelector("[data-table-filter]");
-const unfilterNode = document.querySelector("[data-table-unfilter]");
-const sanitizedWords = trNodes.map((node) => replaceAccent(node.textContent));
-
 inputNode.addEventListener("input", (ev) => {
 	sanitizedWords.forEach(
 		(word, index) => (trNodes[index].hidden = !word.includes(ev.target.value))
 	);
 });
 
+// remove filter
 unfilterNode.addEventListener("click", () => {
 	trNodes.forEach((node) => (node.hidden = false));
 	inputNode.value = "";
+});
+
+// put focus on filter field
+window.addEventListener("keydown", (ev) => {
+	if (
+		ev.keyCode >= 65 &&
+		ev.keyCode <= 90 &&
+		!ev.ctrlKey &&
+		!ev.metaKey &&
+		document.activeElement.tagName !== "INPUT"
+	) {
+		inputNode.focus();
+	}
+
+	if (ev.key === "Escape") {
+		inputNode.value = "";
+		inputNode.dispatchEvent(new CustomEvent("input"));
+	}
 });
