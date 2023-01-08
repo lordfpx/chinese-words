@@ -45,25 +45,31 @@
 
 		<div class="wrapper lg:flex">
 			<div
-				data-table="data-table"
+				data-table
 				class="relative overflow-auto min-w-0 w-full lg:w-3/5 lg:resize-x"
 			></div>
 
 			<div
-				data-details="data-details"
-				class="bg-black fixed bottom-0 left-0 w-full min-w-0 lg:w-2/5 lg:grow lg:relative lg:bottom-auto lg:left-auto lg:h-full"
+				data-details
+				class="bg-black max-lg:translate-y-full transition-transform fixed bottom-0 left-0 w-full min-w-0 lg:w-2/5 lg:grow lg:relative lg:bottom-auto lg:left-auto lg:h-full"
 			>
 				<iframe
-					data-details-iframe="data-details-iframe"
-					class="border-0 absolute top-0 left-0 w-full h-full"
+					data-details-iframe
+					class="border-0 absolute top-0 left-0 w-full h-full transition-opacity z-10"
 				></iframe>
+
+				<p
+					class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
+				>
+					Loading...
+				</p>
 
 				<button
 					type="button"
-					data-details-close="data-details-close"
+					data-details-toggle
 					class="absolute top-0 right-0 -translate-y-full font-bold p-3 bg-black text-white lg:hidden"
 				>
-					Close
+					Toggle details
 				</button>
 			</div>
 		</div>
