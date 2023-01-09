@@ -8,7 +8,7 @@ export const vocabulary = [
 		lesson: "1",
 	},
 	{
-		char: "请问",
+		char: "請問",
 		pinyin: "qǐng wèn",
 		eng: "Excuse me, may I ask you...?",
 		type: "",
