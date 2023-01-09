@@ -1,27 +1,51 @@
 export const vocabulary = [
+	// lesson 1
 	{
 		char: "什麼",
 		pinyin: "shén me",
-		eng: "what?",
-		type: "",
-		lesson: "",
-	},
-	{
-		char: "在",
-		pinyin: "zài",
-		eng: "at, in",
-		type: "",
-		lesson: "",
+		eng: "what",
+		type: "QPr",
+		lesson: "1",
 	},
 	{
 		char: "请问",
 		pinyin: "qǐng wèn",
-		eng: "Excuse me, may I ask...?",
+		eng: "Excuse me, may I ask you...?",
 		type: "",
-		lesson: "",
+		lesson: "1",
+	},
+
+	// lesson 3
+	{
+		char: "在",
+		pinyin: "zài",
+		eng: "in, on, at",
+		type: "Prep",
+		lesson: "3",
 	},
 
 	// lesson 4
+	{
+		char: "爸爸",
+		pinyin: "bàba",
+		eng: "Father, Dad",
+		type: "N",
+		lesson: "4",
+	},
+	{
+		char: "媽媽",
+		pinyin: "māma",
+		eng: "Mother, mom",
+		type: "N",
+		lesson: "4",
+	},
+	{
+		char: "老師",
+		pinyin: "lǎo shī",
+		eng: "teacher",
+		type: "N",
+		lesson: "4",
+	},
 	{
 		char: "忙",
 		pinyin: "máng",
@@ -30,10 +54,66 @@ export const vocabulary = [
 		lesson: "4",
 	},
 	{
+		char: "很",
+		pinyin: "hěn",
+		eng: "very",
+		type: "Adv",
+		lesson: "4",
+	},
+	{
+		char: "每天",
+		pinyin: "měi tiān",
+		eng: "Every day",
+		type: "N",
+		lesson: "4",
+	},
+	{
+		char: "累",
+		pinyin: "lèi",
+		eng: "tired, tiring",
+		type: "Vs",
+		lesson: "4",
+	},
+	{
 		char: "喜歡",
 		pinyin: "xǐ huan",
 		eng: "to like",
 		type: "V",
+		lesson: "4",
+	},
+	{
+		char: "小孩子",
+		pinyin: "xiǎo hái zi",
+		eng: "children, kids",
+		type: "N",
+		lesson: "4",
+	},
+	{
+		char: "說",
+		pinyin: "shuō",
+		eng: "to say",
+		type: "V",
+		lesson: "4",
+	},
+	{
+		char: "教",
+		pinyin: "jiāo",
+		eng: "to teach",
+		type: "V",
+		lesson: "4",
+	},
+	{
+		char: "法文",
+		pinyin: "fǎ wén",
+		eng: "Franch language",
+		type: "N",
+		lesson: "4",
+	},
+	{
+		char: "今天",
+		pinyin: "jīn tiān",
+		eng: "today",
+		type: "N",
 		lesson: "4",
 	},
 
