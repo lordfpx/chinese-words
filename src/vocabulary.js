@@ -629,7 +629,7 @@ export const vocabulary = [
 		lesson: "7",
 	},
 	{
-		char: "嘛煩",
+		char: "麻煩",
 		pinyin: "má fán",
 		eng: "please, if it's not too much trouble, ca I trouble you to",
 		type: "V",
