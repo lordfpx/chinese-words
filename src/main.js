@@ -8,13 +8,15 @@ import prepareObj from "./prepare-obj";
 import tableify from "tableify";
 import Tablesort from "tablesort";
 
-function replaceAccent(string) {
+function cleanString(string) {
 	return string
 		.replace(/[āáǎà]/g, "a")
 		.replace(/[ēéěè]/g, "e")
 		.replace(/[īíǐì]/g, "i")
 		.replace(/[ōóǒò]/g, "o")
-		.replace(/[ūúǔù]/g, "u");
+		.replace(/[ūúǔù]/g, "u")
+		.replaceAll(" ", "")
+		.toUpperCase();
 }
 
 // const optionsQueryParams = "&dmsm=0&wdrst=1&rfs=1&dhlm=0";
@@ -31,7 +33,7 @@ const detailsNode = document.querySelector("[data-details]");
 const detailsIframeNode = document.querySelector("[data-details-iframe]");
 const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
 
-const sanitizedWords = trNodes.map((node) => replaceAccent(node.textContent));
+const sanitizedWords = trNodes.map((node) => cleanString(node.textContent));
 
 // load iframe on the 1st word
 detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${
@@ -71,7 +73,10 @@ document.addEventListener("click", (ev) => {
 // filter
 inputNode.addEventListener("input", (ev) => {
 	sanitizedWords.forEach(
-		(word, index) => (trNodes[index].hidden = !word.includes(ev.target.value))
+		(word, index) =>
+			(trNodes[index].hidden = !word
+				.toUpperCase()
+				.includes(cleanString(ev.target.value)))
 	);
 });
 
