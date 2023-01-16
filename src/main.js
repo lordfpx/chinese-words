@@ -55,7 +55,7 @@ const writer = HanziWriter.create(
 		height: 300,
 		padding: 0,
 		delayBetweenLoops: 2000,
-		delayBetweenStrokes: 500,
+		delayBetweenStrokes: 300,
 		strokeAnimationSpeed: 0.7,
 	}
 );
@@ -66,17 +66,42 @@ document.addEventListener("click", (ev) => {
 	const openNode = ev.target.closest("[data-details-open]");
 	const toggleNode = ev.target.closest("[data-details-toggle]");
 	const speachNode = ev.target.closest("[data-speach]");
+	const modeNode = ev.target.closest("[data-mode]");
 
 	if (openNode) {
 		// detailsIframeNode.style.opacity = 0;
 		// detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${openNode.dataset.detailsOpen}`;
 
 		writer.setCharacter(openNode.dataset.detailsOpen);
-		writer.loopCharacterAnimation();
+		writer.animateCharacter();
 
 		if (!isOpened) {
 			isOpened = true;
 			detailsNode.style.transform = "translateY(0)";
+		}
+	}
+
+	if (modeNode) {
+		const mode = modeNode.getAttribute("data-mode");
+
+		switch (mode) {
+			case "play":
+				writer.showCharacter();
+				writer.showOutline();
+				writer.animateCharacter();
+				break;
+			case "quiz":
+				writer.showCharacter();
+				writer.showOutline();
+				writer.quiz();
+				break;
+			case "blind-quiz":
+				writer.hideCharacter();
+				writer.hideOutline();
+				writer.quiz({
+					showHintAfterMisses: 3,
+				});
+				break;
 		}
 	}
 

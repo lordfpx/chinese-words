@@ -71,13 +71,38 @@
 						width="300"
 						height="300"
 						id="character-target"
-						class="block mx-auto bg-white"
+						class="block mx-auto bg-white !w-full !h-auto"
+						viewBox="0 0 300 300"
 					>
 						<line x1="0" y1="0" x2="300" y2="300" stroke="#DDD" />
 						<line x1="300" y1="0" x2="0" y2="300" stroke="#DDD" />
 						<line x1="150" y1="0" x2="150" y2="300" stroke="#DDD" />
 						<line x1="0" y1="150" x2="300" y2="150" stroke="#DDD" />
 					</svg>
+
+					<div class="space-x-2 mt-2">
+						<button
+							type="button"
+							class="text-white border border-white p-2"
+							data-mode="play"
+						>
+							Play
+						</button>
+						<button
+							type="button"
+							class="text-white border border-white p-2"
+							data-mode="quiz"
+						>
+							Draw
+						</button>
+						<button
+							type="button"
+							class="text-white border border-white p-2"
+							data-mode="blind-quiz"
+						>
+							Quiz
+						</button>
+					</div>
 				</div>
 
 				<button

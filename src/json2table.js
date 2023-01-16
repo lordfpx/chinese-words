@@ -13,9 +13,7 @@ export const json2table = (obj) => {
 
 		words.forEach((word, index) => {
 			if (index > 0) {
-				const span = document.createElement("span");
-				span.textContent = " / ";
-				fragment.appendChild(span);
+				fragment.appendChild(document.createElement("br"));
 			}
 
 			word.split("").forEach((letter) => {
