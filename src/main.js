@@ -19,6 +19,14 @@ function cleanString(string) {
 		.toUpperCase();
 }
 
+const simulateSpeech = () => {
+	const lecture = new SpeechSynthesisUtterance("hello");
+	lecture.volume = 0;
+	speechSynthesis.speak(lecture);
+	document.removeEventListener("click", simulateSpeech);
+};
+document.addEventListener("click", simulateSpeech);
+
 // const optionsQueryParams = "&dmsm=0&wdrst=1&rfs=1&dhlm=0";
 // const optionsQueryParams = "&wdrst=1";
 let isOpened = false;
@@ -90,11 +98,12 @@ document.addEventListener("click", (ev) => {
 	}
 
 	if (speachNode) {
-		var msg = new SpeechSynthesisUtterance();
-		msg.text = speachNode.getAttribute("data-speach");
+		const msg = new SpeechSynthesisUtterance();
 		msg.lang = "zh-CN";
 		msg.pitch = 1;
 		msg.rate = 0.7;
+		msg.volume = 1;
+		msg.text = speachNode.getAttribute("data-speach");
 		window.speechSynthesis.speak(msg);
 	}
 });
