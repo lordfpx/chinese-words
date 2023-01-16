@@ -54,7 +54,7 @@
 				data-details
 				class="bg-black max-lg:translate-y-full transition-transform fixed bottom-0 left-0 w-full min-w-0 lg:w-2/5 lg:grow lg:relative lg:bottom-auto lg:left-auto lg:h-full"
 			>
-				<iframe
+				<!-- <iframe
 					data-details-iframe
 					class="border-0 absolute top-0 left-0 w-full h-full transition-opacity z-10"
 				></iframe>
@@ -63,7 +63,22 @@
 					class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
 				>
 					Loading...
-				</p>
+				</p> -->
+
+				<div class="p-6">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="300"
+						height="300"
+						id="character-target"
+						class="block mx-auto bg-white"
+					>
+						<line x1="0" y1="0" x2="300" y2="300" stroke="#DDD" />
+						<line x1="300" y1="0" x2="0" y2="300" stroke="#DDD" />
+						<line x1="150" y1="0" x2="150" y2="300" stroke="#DDD" />
+						<line x1="0" y1="150" x2="300" y2="150" stroke="#DDD" />
+					</svg>
+				</div>
 
 				<button
 					type="button"

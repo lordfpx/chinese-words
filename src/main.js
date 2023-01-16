@@ -3,10 +3,10 @@
 import "./style.scss";
 
 import { vocabulary } from "./vocabulary";
-import prepareObj from "./prepare-obj";
 
-import tableify from "tableify";
+import { json2table } from "./json2table";
 import Tablesort from "tablesort";
+import HanziWriter from "hanzi-writer";
 
 function cleanString(string) {
 	return string
@@ -20,39 +20,59 @@ function cleanString(string) {
 }
 
 // const optionsQueryParams = "&dmsm=0&wdrst=1&rfs=1&dhlm=0";
-const optionsQueryParams = "&wdrst=1";
+// const optionsQueryParams = "&wdrst=1";
 let isOpened = false;
 
 const tableWrapperNode = document.querySelector("[data-table]");
-tableWrapperNode.innerHTML = tableify(prepareObj(vocabulary));
+tableWrapperNode.appendChild(json2table(vocabulary));
 new Tablesort(document.querySelector("table"));
 
 const inputNode = document.querySelector("[data-table-filter]");
 const unfilterNode = document.querySelector("[data-table-unfilter]");
 const detailsNode = document.querySelector("[data-details]");
-const detailsIframeNode = document.querySelector("[data-details-iframe]");
+const speachBtnNode = document.querySelector("[data-speach]");
+// const detailsIframeNode = document.querySelector("[data-details-iframe]");
 const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
 
 const sanitizedWords = trNodes.map((node) => cleanString(node.textContent));
 
 // load iframe on the 1st word
-detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${
-	trNodes[0].querySelector("[data-details-open]").textContent
-}`;
+// detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${
+// 	trNodes[0].querySelector("[data-details-open]").textContent
+// }`;
 
 // iframe loaded
-detailsIframeNode.addEventListener("load", () => {
-	detailsIframeNode.style.opacity = 1;
-	inputNode.focus();
-});
+// detailsIframeNode.addEventListener("load", () => {
+// 	detailsIframeNode.style.opacity = 1;
+// 	inputNode.focus();
+// });
+
+const writer = HanziWriter.create(
+	"character-target",
+	trNodes[0].querySelector("[data-details-open]").textContent,
+	{
+		width: 300,
+		height: 300,
+		padding: 0,
+		delayBetweenLoops: 2000,
+		delayBetweenStrokes: 500,
+		strokeAnimationSpeed: 0.7,
+	}
+);
+
+writer.loopCharacterAnimation();
 
 document.addEventListener("click", (ev) => {
 	const openNode = ev.target.closest("[data-details-open]");
 	const toggleNode = ev.target.closest("[data-details-toggle]");
+	const speachNode = ev.target.closest("[data-speach]");
 
 	if (openNode) {
-		detailsIframeNode.style.opacity = 0;
-		detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${openNode.dataset.detailsOpen}`;
+		// detailsIframeNode.style.opacity = 0;
+		// detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${openNode.dataset.detailsOpen}`;
+
+		writer.setCharacter(openNode.dataset.detailsOpen);
+		writer.loopCharacterAnimation();
 
 		if (!isOpened) {
 			isOpened = true;
@@ -67,6 +87,15 @@ document.addEventListener("click", (ev) => {
 			detailsNode.style.transform = "translateY(0)";
 		}
 		isOpened = !isOpened;
+	}
+
+	if (speachNode) {
+		var msg = new SpeechSynthesisUtterance();
+		msg.text = speachNode.getAttribute("data-speach");
+		msg.lang = "zh-CN";
+		msg.pitch = 1;
+		msg.rate = 0.7;
+		window.speechSynthesis.speak(msg);
 	}
 });
 
