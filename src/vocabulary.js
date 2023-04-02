@@ -1018,18 +1018,21 @@ export const vocabulary = [
 		char: "是啊",
 		pinyin: "shì a!",
 		eng: "That's right!",
+		type: "",
 		lesson: "8",
 	},
 	{
 		char: "可以嗎",
 		pinyin: "kě yǐ ma?",
 		eng: "Could I? Is it okay?",
+		type: "",
 		lesson: "8",
 	},
 	{
 		char: "好不好",
 		pinyin: "hǎo bù hǎo?",
 		eng: "Is it okay? How does that sound?",
+		type: "",
 		lesson: "8",
 	},
 ];

@@ -22,6 +22,7 @@
 		"vite": "^4.0.0"
 	},
 	"dependencies": {
+		"a11y-dialog": "^7.5.2",
 		"hanzi-writer": "^3.4.0",
 		"tablesort": "^5.3.0"
 	}

@@ -1,12 +1,16 @@
 // https://www.lexilogos.com/keyboard/chinese_pinyin.htm
 
+import "./modal.scss";
 import "./style.scss";
 
 import { vocabulary } from "./vocabulary";
+import { texts } from "./texts";
 
 import { json2table } from "./json2table";
 import Tablesort from "tablesort";
 import HanziWriter from "hanzi-writer";
+
+import A11yDialog from "a11y-dialog";
 
 function cleanString(string) {
 	return string
@@ -30,7 +34,7 @@ new Tablesort(document.querySelector("table"));
 const inputNode = document.querySelector("[data-table-filter]");
 const unfilterNode = document.querySelector("[data-table-unfilter]");
 const detailsNode = document.querySelector("[data-details]");
-const speachBtnNode = document.querySelector("[data-speach]");
+// const speachBtnNode = document.querySelector("[data-speach]");
 // const detailsIframeNode = document.querySelector("[data-details-iframe]");
 const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
 
@@ -158,5 +162,38 @@ window.addEventListener("keydown", (ev) => {
 	if (ev.key === "Escape") {
 		inputNode.value = "";
 		inputNode.dispatchEvent(new CustomEvent("input"));
+	}
+});
+
+// LESSONS modal
+const modal = document.querySelector("#lessons");
+const dialog = new A11yDialog(modal);
+const modalTitle = modal.querySelector("[data-lesson-title]");
+const modalContent = modal.querySelector("[data-lesson-content]");
+
+document.addEventListener("click", (ev) => {
+	const trigger = ev.target.closest("[data-lesson-trigger]");
+
+	if (trigger) {
+		const lessonNbr = trigger.getAttribute("data-lesson-trigger");
+		modalTitle.textContent = `Lesson ${lessonNbr}`;
+
+		const { chinese, pinyin, english } = texts.find(
+			(lesson) => lesson.lesson === lessonNbr
+		);
+
+		const chineseLines = chinese.split("\n");
+		const pinyinLines = pinyin.split("\n");
+		const englishLines = english.split("\n");
+
+		chineseLines.forEach((line, index) => {
+			const lineNode = document.createElement("div");
+			lineNode.innerHTML = `
+				<p class="text-2xl lg:text-4xl">${line}</p>
+				<p>${pinyinLines[index]}</p>
+				<p>${englishLines[index]}</p>
+			`;
+			modalContent.appendChild(lineNode);
+		});
 	}
 });

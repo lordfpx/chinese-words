@@ -1,3 +1,5 @@
+import { texts } from "./texts";
+
 export const json2table = (obj) => {
 	const table = document.createElement("table");
 	const tr = document.createElement("tr");
@@ -33,6 +35,23 @@ export const json2table = (obj) => {
 		return fragment;
 	}
 
+	function lesson2texts(string) {
+		let node;
+
+		if (texts.find((lesson) => lesson.lesson === string)) {
+			node = document.createElement("button");
+			node.setAttribute("type", "button");
+			node.setAttribute("data-a11y-dialog-show", "lessons");
+			node.setAttribute("data-lesson-trigger", string);
+			node.textContent = `${string} (view)`;
+		} else {
+			node = document.createElement("div");
+			node.textContent = string;
+		}
+
+		return node;
+	}
+
 	function buildHead() {
 		const thead = document.createElement("thead");
 		const newTr = tr.cloneNode();
@@ -59,6 +78,8 @@ export const json2table = (obj) => {
 
 				if (key === "char") {
 					newTd.appendChild(string2Btn(word[key]));
+					// } else if (key === "lesson") {
+					// 	newTd.appendChild(lesson2texts(word[key]));
 				} else {
 					newTd.textContent = word[key];
 				}

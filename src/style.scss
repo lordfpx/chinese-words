@@ -96,6 +96,14 @@
 		}
 	}
 
+	[data-a11y-dialog-show] {
+		@apply border-none text-blue-700 bg-transparent p-0;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
 	@screen lg {
 		.wrapper {
 			height: calc(100vh - var(--filter-height));
