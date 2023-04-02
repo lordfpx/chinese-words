@@ -991,4 +991,45 @@ export const vocabulary = [
 		type: "N",
 		lesson: "8",
 	},
+	{
+		char: "今年",
+		pinyin: "jīn nián",
+		eng: "This year",
+		type: "N",
+		lesson: "8",
+	},
+	{
+		char: "送",
+		pinyin: "sòng",
+		eng: "To give a gift to someone",
+		type: "V",
+		lesson: "8",
+	},
+	{
+		char: "日",
+		pinyin: "rì",
+		eng: "days of the month (in written)",
+		type: "N",
+		lesson: "8",
+	},
+
+	// lesson 8: expressions
+	{
+		char: "是啊",
+		pinyin: "shì a!",
+		eng: "That's right!",
+		lesson: "8",
+	},
+	{
+		char: "可以嗎",
+		pinyin: "kě yǐ ma?",
+		eng: "Could I? Is it okay?",
+		lesson: "8",
+	},
+	{
+		char: "好不好",
+		pinyin: "hǎo bù hǎo?",
+		eng: "Is it okay? How does that sound?",
+		lesson: "8",
+	},
 ];
