@@ -44,32 +44,21 @@
 		}
 
 		&:nth-child(1) {
-			width: 30%;
 			@apply text-3xl lg:text-5xl;
 		}
 
 		&:nth-child(2) {
-			width: 20%;
 			@apply text-lg lg:text-2xl;
 		}
 
 		&:nth-child(3) {
-			width: 30%;
 			@apply text-lg lg:text-2xl;
-		}
-
-		&:nth-child(4) {
-			width: 10%;
-		}
-
-		&:nth-child(5) {
-			width: 10%;
 		}
 	}
 
 	th,
 	td {
-		@apply w-0 text-left p-2 lg:p-4 border-b border-b-slate-400;
+		@apply w-0 text-left p-1 lg:p-4 border-b border-b-slate-400 lg:p-2;
 	}
 
 	tbody tr:hover {
@@ -87,9 +76,8 @@
 	}
 
 	[data-details-open] {
-		@apply mr-1 border-none text-blue-700 bg-transparent p-0;
+		@apply border-none text-blue-700 bg-transparent p-0;
 		font-family: "Noto Serif TC", serif;
-		letter-spacing: 0.3em;
 
 		&:hover {
 			text-decoration: underline;

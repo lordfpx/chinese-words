@@ -48,17 +48,19 @@
 	z-index: 2; /* 2 */
 	position: relative; /* 2 */
 	background-color: white; /* 3 */
-
 	animation: fade-in 400ms 200ms both, slide-up 400ms 200ms both;
 	padding: 1em;
-	max-width: 90%;
-	width: 800px;
+	max-height: 75vh;
+	max-width: 95%;
+	width: 900px;
 	border-radius: 5px;
+	overflow: auto;
 }
 
 @media screen and (min-width: 700px) {
 	.dialog-content {
 		padding: 2em;
+		max-height: 90vh;
 	}
 }
 

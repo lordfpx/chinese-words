@@ -643,7 +643,7 @@ export const vocabulary = [
 		char: "位",
 		pinyin: "wèi",
 		eng: "Polite measure word for people",
-		type: "Specificator",
+		type: "Spe.",
 		lesson: "7",
 	},
 	{
