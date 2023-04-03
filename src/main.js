@@ -118,8 +118,7 @@ document.addEventListener("click", (ev) => {
 		const msg = new SpeechSynthesisUtterance();
 		msg.voice = window.speechSynthesis
 			.getVoices()
-			.find((voice) => voice.lang === "zh-CN");
-		msg.pitch = 1;
+			.find((voice) => voice.lang === "zh-TW");
 		msg.rate = 0.7;
 		msg.volume = 1;
 		msg.text = speachNode.getAttribute("data-speach");
