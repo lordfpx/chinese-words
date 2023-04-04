@@ -36,7 +36,7 @@
 	}
 
 	td {
-		font-size: 1.1rem;
+		font-size: 0.9rem;
 
 		&:nth-child(1),
 		&:nth-child(2) {
@@ -48,17 +48,30 @@
 		}
 
 		&:nth-child(2) {
-			@apply text-lg lg:text-2xl;
+			@apply lg:text-2xl;
 		}
 
 		&:nth-child(3) {
-			@apply text-lg lg:text-2xl;
+			@apply lg:text-2xl;
+		}
+
+		&:nth-child(4),
+		&:nth-child(5) {
+			font-size: 0.8rem;
+			@apply lg:text-2xl text-center;
+		}
+	}
+
+	th {
+		&:nth-child(4),
+		&:nth-child(5) {
+			@apply text-center;
 		}
 	}
 
 	th,
 	td {
-		@apply w-0 text-left p-1 lg:p-4 border-b border-b-slate-400 lg:p-2;
+		@apply w-0 text-left p-2 lg:p-4 border-b border-b-slate-400;
 	}
 
 	tbody tr:hover {

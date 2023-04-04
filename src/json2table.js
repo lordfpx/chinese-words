@@ -1,4 +1,4 @@
-import { texts } from "./texts";
+import { texts } from "./data/texts";
 
 export const json2table = (obj) => {
 	const table = document.createElement("table");
@@ -6,7 +6,7 @@ export const json2table = (obj) => {
 	const th = document.createElement("th");
 	const td = document.createElement("td");
 
-	function string2Btn(string) {
+	function charCelDisplay(string) {
 		const fragment = document.createDocumentFragment();
 		const btn = document.createElement("button");
 		btn.setAttribute("type", "button");
@@ -18,25 +18,25 @@ export const json2table = (obj) => {
 				fragment.appendChild(document.createElement("br"));
 			}
 
+			const speachBtn = btn.cloneNode();
+			speachBtn.classList.add("mr-2", "lg:mr-4");
+			speachBtn.setAttribute("data-speach", word);
+			speachBtn.setAttribute("title", `Speak ${word}`);
+			speachBtn.innerHTML = `<svg focusable="false" class="w-4 lg:w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm13.517 4.134l-1.416-1.416A8.978 8.978 0 0 0 21 12a8.982 8.982 0 0 0-3.304-6.968l1.42-1.42A10.976 10.976 0 0 1 23 12c0 3.223-1.386 6.122-3.594 8.134zm-3.543-3.543l-1.422-1.422A3.993 3.993 0 0 0 16 12c0-1.43-.75-2.685-1.88-3.392l1.439-1.439A5.991 5.991 0 0 1 18 12c0 1.842-.83 3.49-2.137 4.591z" fill="rgba(0,0,0,1)"/></svg>`;
+			fragment.appendChild(speachBtn);
+
 			word.split("").forEach((letter) => {
 				const newBtn = btn.cloneNode();
 				newBtn.setAttribute("data-details-open", letter);
 				newBtn.textContent = letter;
 				fragment.appendChild(newBtn);
 			});
-
-			const speachBtn = btn.cloneNode();
-			speachBtn.classList.add("ml-2");
-			speachBtn.setAttribute("data-speach", word);
-			speachBtn.setAttribute("title", `Speak ${word}`);
-			speachBtn.innerHTML = `<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M5.889 16H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L5.89 16zm13.517 4.134l-1.416-1.416A8.978 8.978 0 0 0 21 12a8.982 8.982 0 0 0-3.304-6.968l1.42-1.42A10.976 10.976 0 0 1 23 12c0 3.223-1.386 6.122-3.594 8.134zm-3.543-3.543l-1.422-1.422A3.993 3.993 0 0 0 16 12c0-1.43-.75-2.685-1.88-3.392l1.439-1.439A5.991 5.991 0 0 1 18 12c0 1.842-.83 3.49-2.137 4.591z" fill="rgba(0,0,0,1)"/></svg>`;
-			fragment.appendChild(speachBtn);
 		});
 
 		return fragment;
 	}
 
-	function lesson2texts(string) {
+	function lessonCelDisplay(string) {
 		let node;
 
 		if (texts.find((lesson) => lesson.lesson === string)) {
@@ -78,9 +78,9 @@ export const json2table = (obj) => {
 				let newTd = td.cloneNode();
 
 				if (key === "char") {
-					newTd.appendChild(string2Btn(word[key]));
+					newTd.appendChild(charCelDisplay(word[key]));
 				} else if (key === "lesson") {
-					newTd.appendChild(lesson2texts(word[key]));
+					newTd.appendChild(lessonCelDisplay(word[key]));
 				} else {
 					newTd.textContent = word[key];
 				}

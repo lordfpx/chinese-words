@@ -3,7 +3,7 @@
 import "./modal.scss";
 import "./style.scss";
 
-import { vocabulary } from "./vocabulary";
+import { vocabulary } from "./data/vocabulary";
 import { json2table } from "./json2table";
 import Tablesort from "tablesort";
 import HanziWriter from "hanzi-writer";
