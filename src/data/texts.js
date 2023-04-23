@@ -29,4 +29,43 @@ Jiawen: Invite me to a big meal, okay?
 Brother: OK, no problem.
 Jiawen: Thank you, brother.`,
 	},
+	{
+		lesson: "9",
+		chinese: `Gloria,  好 久 不 見。
+你 好。 明文， 這 位 是 我 同事 Lisa。
+Lisa, 很 高興 認識 你。
+我 也 很 高興 認識 你。
+明文， 星期六 晚上 我們 要 去 美味 餐廳 吃飯， 你 要不要 跟 我們 一起 去？
+星期六 不行， 星期五 怎麼樣？
+星期五 也 行。 Lisa, 你 星期五 有 時間 嗎？
+沒問題。
+太好了， 明文， 你 幾 點 下課？
+我 五 點 下課。
+我們 星期五 晚上 六點半 在 餐廳 見， 怎麼樣？
+太好了！ 那 家 餐廳 的 牛肉麵 最 好吃。 我們 星期五 jian。`,
+		pinyin: `Gloria, hǎojiǔ bùjiàn
+Nǐ hǎo. Míngwén, zhè wèi shì wǒ tóngshì Lisa.
+Lisa, hěn gāoxìng rènshí nǐ.
+Wǒ yě hěn gāoxìng rènshí nǐ.
+Míngwén, xīngqíliù wǎnshàng wǒmen yào qù měiwèi cāntīng chīfàn, nǐ yào bùyào gēn wǒmen yīqǐ qù?
+Xīngqíliù bùxíng, xīngqíwǔ zěnmeyàng?
+Xīngqíwǔ yě xíng. Lisa, nǐ xīngqíwǔ yǒu shíjiān ma?
+Méi wèntí.
+Tài hǎole, míngwén, nǐ jǐ diǎn xiàkè?
+Wǒ wǔ diǎn xiàkè.
+Wǒmen xīngqíwǔ wǎnshàng liù diǎn bàn zài cāntīng jiàn, zěnmeyàng?
+Tài hǎole! Nà jiā cāntīng de niúròumiàn zuì hàochī. Wǒmen xīngqíwǔ jian.`,
+		english: `Gloria, long time no see
+Hello. Mingwen, this is my colleague Lisa.
+Lisa, nice to meet you.
+Nice to meet you too.
+Mingwen, we are going to eat at a delicious restaurant on Saturday night, do you want to go with us?
+No Saturday, how about Friday?
+Friday is fine too. Lisa, do you have time on Friday?
+no problem.
+Great, Mingwen, what time do you finish class?
+I finish class at five o'clock.
+How about we meet at the restaurant at 6:30 on Friday night?
+Very good! The beef noodles in that restaurant are the best. We are on Friday.`,
+	},
 ];
