@@ -8,6 +8,16 @@ import { json2table } from "./json2table";
 import Tablesort from "tablesort";
 import HanziWriter from "hanzi-writer";
 
+const msg = new SpeechSynthesisUtterance();
+
+window.speechSynthesis.onvoiceschanged = () => {
+	const voices = window.speechSynthesis.getVoices();
+	const voice = voices.find((voice) => voice.lang === "zh-TW");
+	msg.voice = voice;
+	msg.rate = 0.7;
+	msg.volume = 1;
+};
+
 function cleanString(string) {
 	return string
 		.replace(/[āáǎà]/g, "a")
@@ -115,12 +125,7 @@ document.addEventListener("click", (ev) => {
 	}
 
 	if (speachNode) {
-		const msg = new SpeechSynthesisUtterance();
-		msg.voice = window.speechSynthesis
-			.getVoices()
-			.find((voice) => voice.lang === "zh-TW");
-		msg.rate = 0.7;
-		msg.volume = 1;
+		window.speechSynthesis.cancel();
 		msg.text = speachNode.getAttribute("data-speach");
 		window.speechSynthesis.speak(msg);
 	}
