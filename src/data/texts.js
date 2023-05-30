@@ -1,5 +1,30 @@
 export const texts = [
 	{
+		lesson: "1",
+		chinese: `您好。
+您好。
+我姓王， 請問您貴姓？
+我姓Lee, 叫Gloria。 您叫什麼名字？
+我叫明文。 請問您是哪國人？
+我是美國人。 您呢？
+我是臺灣人`,
+		pinyin: `Nín hǎo.
+Nín hǎo.
+Wǒ xìng wáng, qǐngwèn nín guìxìng?
+Wǒ xìng Lee, jiào Gloria. Nín jiào shénme míngzì?
+Wǒ jiào míngwén. Qǐngwèn nín shì nǎ guórén?
+Wǒ shì měiguó rén. Nín ne?
+Wǒ shì táiwān rén
+`,
+		english: `Hello.
+Hello.
+My surname is Wang, what is your surname?
+My last name is Lee and my name is Gloria. What is your name?
+My name is Mingwen. What country are you from?
+I am American. and you?
+I am Taiwanese`,
+	},
+	{
 		lesson: "8",
 		chinese: `家文： 大哥，明天 是 幾 月 幾 號?
 大哥： 明天 是 八月 十一號。 噢！ 明天 是 你 的 生日。
