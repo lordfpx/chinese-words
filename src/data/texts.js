@@ -48,6 +48,27 @@ do you have a brother
 I don't have an older brother, nor a younger brother. I only have one older sister.`,
 	},
 	{
+		lesson: "3",
+		chinese: `Gloria, 你姊姊是學生嗎？
+她不是學生，她大學畢業了。
+她在哪裡工作？
+我姊姊在銀行工作，她先生在電腦公司工作。
+你姊姊結婚了，他們有孩子嗎？
+他們有兩個孩子，一個兒子，一個女兒。兩個小孩都在小學念書。`,
+		pinyin: `Gloria, nǐ jiě jie shì xuéshēng ma?
+Tā bùshì xuéshēng, tā dàxué bìyèle.
+Tā zài nǎlǐ gōngzuò?
+Wǒ jiě jie zài yínháng gōngzuò, tā xiānshēng zài diànnǎo gōngsī gōngzuò.
+Nǐ jiě jie jiéhūnle, tāmen yǒu háizi ma?
+Tāmen yǒu liǎng gè háizi, yīgè er zi, yīgè nǚ'ér. Liǎng gè xiǎohái dōu zài xiǎoxué niànshū.`,
+		english: `Gloria, is your sister a student?
+She is not a student, she graduated from college.
+where does she work
+My sister works in a bank and her husband works in a computer company.
+Your sister is married. Do they have children?
+They have two children, a son and a daughter. Both children are in elementary school.`,
+	},
+	{
 		lesson: "8",
 		chinese: `家文： 大哥，明天 是 幾 月 幾 號?
 大哥： 明天 是 八月 十一號。 噢！ 明天 是 你 的 生日。
