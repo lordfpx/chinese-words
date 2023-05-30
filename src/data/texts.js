@@ -69,6 +69,30 @@ Your sister is married. Do they have children?
 They have two children, a son and a daughter. Both children are in elementary school.`,
 	},
 	{
+		lesson: "4",
+		chinese: `明文，請問你爸爸，媽媽在哪裡工作？
+我爸爸在電腦公司工作，我媽媽是小學老師。
+你爸爸的工作忙不忙？
+他的工作很忙，他每天都很累。
+你媽媽呢？
+她喜歡小孩子，她說教書不累。
+我爸爸也是老師，他在大學教法文。`,
+		pinyin: `Míngwén, qǐngwèn nǐ bàba, māmā zài nǎlǐ gōngzuò?
+Wǒ bàba zài diànnǎo gōngsī gōngzuò, wǒ māmā shì xiǎoxué lǎoshī.
+Nǐ bàba de gōngzuò máng bù máng?
+Tā de gōngzuò hěn máng, tā měitiān dū hěn lèi.
+Nǐ māmā ne?
+Tā xǐhuān xiǎo háizi, tā shuō jiāoshū bù lèi.
+Wǒ bàba yěshì lǎoshī, tā zài dàxué jiào fǎ wén.`,
+		english: `Mingwen, may I ask where your father and mother work?
+My dad works in a computer company and my mom is an elementary school teacher.
+Is your father busy with work?
+His work is very busy and he is very tired every day.
+And your mom?
+She likes children, she said teaching is not tiring.
+My dad is also a teacher, he teaches French at the university.`,
+	},
+	{
 		lesson: "8",
 		chinese: `家文： 大哥，明天 是 幾 月 幾 號?
 大哥： 明天 是 八月 十一號。 噢！ 明天 是 你 的 生日。
