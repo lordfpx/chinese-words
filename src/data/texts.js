@@ -14,8 +14,7 @@ Wǒ xìng wáng, qǐngwèn nín guìxìng?
 Wǒ xìng Lee, jiào Gloria. Nín jiào shénme míngzì?
 Wǒ jiào míngwén. Qǐngwèn nín shì nǎ guórén?
 Wǒ shì měiguó rén. Nín ne?
-Wǒ shì táiwān rén
-`,
+Wǒ shì táiwān rén`,
 		english: `Hello.
 Hello.
 My surname is Wang, what is your surname?
@@ -23,6 +22,30 @@ My last name is Lee and my name is Gloria. What is your name?
 My name is Mingwen. What country are you from?
 I am American. and you?
 I am Taiwanese`,
+	},
+	{
+		lesson: "2",
+		chinese: `明文，你好。
+你好， Gloria。
+明文，你有兄弟姊妹嗎？
+我有一個姊姊，兩個弟弟。你呢？
+我也有一個姊姊。
+你有哥哥嗎？
+我沒有哥哥，也沒有弟弟。我只有一個姊姊。`,
+		pinyin: `Míngwén, nǐ hǎo.
+Nǐ hǎo, Gloria.
+Míngwén, nǐ yǒu xiōngdì zǐmèi ma?
+Wǒ yǒu yīgè jiě jie, liǎng gè dìdì. Nǐ ne?
+Wǒ yěyǒu yīgè jiě jie.
+Nǐ yǒu gēgē ma?
+Wǒ méiyǒu gēgē, yě méiyǒu dìdì. Wǒ zhǐyǒu yīgè jiě jie.`,
+		english: `Mingwen, hello.
+Hello Gloria.
+Mingwen, do you have any siblings?
+I have an older sister and two younger brothers. And you?
+I also have a sister.
+do you have a brother
+I don't have an older brother, nor a younger brother. I only have one older sister.`,
 	},
 	{
 		lesson: "8",
