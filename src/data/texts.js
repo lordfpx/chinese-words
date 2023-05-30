@@ -93,6 +93,36 @@ She likes children, she said teaching is not tiring.
 My dad is also a teacher, he teaches French at the university.`,
 	},
 	{
+		lesson: "5",
+		chinese: `Gloria, 好久不見。
+你好，好久不見。
+這是我弟弟, 王家文. 家文, 這是我朋友, Gloria。
+你好， 家文， 認識你很高興。
+Gloria, 我也很高興認識妳。
+家文，你也在美國念書嗎？
+不是， 我平常住在臺灣。 現在學校放假， 我來美國玩。
+歡迎你來美國。 你想去哪裡玩？
+我想去迪士尼樂園玩， 也想去國家公園玩。`,
+		pinyin: `Gloria, hǎojiǔ bùjiàn.
+Nǐ hǎo, hǎojiǔ bùjiàn.
+Zhè shì wǒ dìdì, wángjiā wén. Jiā wén, zhè shì wǒ péngyǒu, Gloria.
+Nǐ hǎo, jiā wén, rènshí nǐ hěn gāoxìng.
+Gloria, wǒ yě hěn gāoxìng rènshí nǎi.
+Jiā wén, nǐ yě zài měiguó niànshū ma?
+Bùshì, wǒ píngcháng zhù zài táiwān. Xiànzài xuéxiào fàngjià, wǒ lái měiguó wán.
+Huānyíng nǐ lái měiguó. Nǐ xiǎng qù nǎlǐ wán?
+Wǒ xiǎng qù díshìní lèyuán wán, yě xiǎng qù guójiā gōngyuán wán.`,
+		english: `Gloria, long time no see.
+Hello, long time no see.
+This is my brother, Wang Jiawen. Jiawen, this is my friend, Gloria.
+Hello, Jiawen, nice to meet you.
+Gloria, nice to meet you too.
+Jiawen, are you also studying in America?
+No, I usually live in Taiwan. Now that the school is on holiday, I'm coming to America to play.
+Welcome to America. Where do you want to play?
+I want to go to Disneyland, and I want to go to national parks.`,
+	},
+	{
 		lesson: "8",
 		chinese: `家文： 大哥，明天 是 幾 月 幾 號?
 大哥： 明天 是 八月 十一號。 噢！ 明天 是 你 的 生日。
