@@ -9,6 +9,12 @@
 	--filter-height: 50px;
 }
 
+@layer utilities {
+	.font-chinese {
+		font-family: "Noto Serif TC", serif;
+	}
+}
+
 @layer base {
 	body {
 		padding-bottom: var(--iframe-height);
@@ -32,7 +38,7 @@
 
 	table,
 	thead {
-		@apply w-full;
+		@apply w-full font-mono;
 	}
 
 	td {
@@ -85,12 +91,12 @@
 	}
 
 	[data-details] {
+		@apply relative z-10;
 		height: var(--iframe-height);
 	}
 
 	[data-details-open] {
-		@apply border-none text-blue-700 bg-transparent p-0;
-		font-family: "Noto Serif TC", serif;
+		@apply border-none text-blue-700 bg-transparent p-0 font-chinese;
 
 		&:hover {
 			text-decoration: underline;
@@ -102,6 +108,30 @@
 
 		&:hover {
 			text-decoration: underline;
+		}
+	}
+
+	.wrapper {
+		@apply relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 30px;
+			pointer-events: none;
+			background-image: linear-gradient(to left, white, transparent);
+		}
+	}
+
+	@screen md {
+		.wrapper {
+			&::before {
+				display: none;
+			}
 		}
 	}
 

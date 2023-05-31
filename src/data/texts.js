@@ -123,6 +123,33 @@ Welcome to America. Where do you want to play?
 I want to go to Disneyland, and I want to go to national parks.`,
 	},
 	{
+		lesson: "6",
+		chinese: `家文， 你喜不喜歡運動？
+我喜歡運動， 我平常喜歡跑步。
+你哥哥平常喜歡做什麼？
+他平常喜歡跑步，週末喜歡去打網球。你呢？
+我不喜歡運動。我喜歡唱歌，聽音樂和跳舞。
+我哥哥和我也喜歡唱歌，可是我們都不喜歡跳舞。
+我還喜歡看電視，我晚上在家看電視。
+我在臺灣，晚上喜歡去公園跑步。`,
+		pinyin: `Jiā wén, nǐ xǐ bù xǐhuān yùndòng?
+Wǒ xǐhuān yùndòng, wǒ píngcháng xǐhuān pǎobù.
+Nǐ gēgē píngcháng xǐhuān zuò shénme?
+Tā píngcháng xǐhuān pǎobù, zhōumò xǐhuān qù dǎ wǎngqiú. Nǐ ne?
+Wǒ bù xǐhuān yùndòng. Wǒ xǐhuān chànggē, tīng yīnyuè hé tiàowǔ.
+Wǒ gēgē hé wǒ yě xǐhuān chànggē, kěshì wǒmen dōu bù xǐhuān tiàowǔ.
+Wǒ hái xǐhuān kàn diànshì, wǒ wǎnshàng zàijiā kàn diànshì.
+Wǒ zài táiwān, wǎnshàng xǐhuān qù gōngyuán pǎobù.`,
+		english: `Jiawen, tu aimes le sport ?
+J'aime le sport, j'aime généralement courir.
+Qu'est-ce que votre frère aime faire habituellement ?
+Il aime généralement courir et aime jouer au tennis le week-end. Et toi?
+Je n'aime pas le sport. J'aime chanter, écouter de la musique et danser.
+Mon frère et moi aimons aussi chanter, mais nous n'aimons pas danser.
+J'aime aussi regarder la télé, je regarde la télé à la maison le soir.
+Je suis à Taïwan et j'aime aller courir dans le parc la nuit.`,
+	},
+	{
 		lesson: "8",
 		chinese: `家文： 大哥，明天 是 幾 月 幾 號?
 大哥： 明天 是 八月 十一號。 噢！ 明天 是 你 的 生日。
