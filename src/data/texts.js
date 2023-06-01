@@ -150,6 +150,42 @@ J'aime aussi regarder la télé, je regarde la télé à la maison le soir.
 Je suis à Taïwan et j'aime aller courir dans le parc la nuit.`,
 	},
 	{
+		lesson: "7",
+		chinese: `喂，台一銀行，您好！
+喂，您好！請問林美美小姐在嗎？
+林小姐現在不在辦公室，請問您是哪位？
+我是北電公司的Gloria。請問林小姐什麼時候回來？
+Gloria，林小姐下午回來。
+麻煩您，請她回來以後給我打電話。
+請問您的手機是幾號？
+我的手機號碼是（五一七）三六零四二五九。
+好的，Gloria。
+謝謝您！
+不客氣，再見。`,
+		pinyin: `Wèi, tái yī yínháng, nín hǎo!
+Wèi, nín hǎo! Qǐngwèn lín měiměi xiǎojiě zài ma?
+Lín xiǎojiě xiànzài bùzài bàngōngshì, qǐngwèn nín shì nǎ wèi?
+Wǒ shì běi diàn gōngsī de Gloria. Qǐngwèn lín xiǎojiě shénme shíhòu huílái?
+Gloria, lín xiǎojiě xiàwǔ huílái.
+Máfan nín, qǐng tā huílái yǐhòu gěi wǒ dǎ diànhuà.
+Qǐngwèn nín de shǒujī shì jǐ hào?
+Wǒ de shǒujī hàomǎ shì (wǔyīqī) sānliù líng sì'èrwǔjiǔ.
+Hǎo de,Gloria.
+Xièxiè nín!
+Bù kèqì, zàijiàn.`,
+		english: `Hello, Taiyi Bank, hello!
+Hello, hello! Is Miss Lin Meimei here?
+Ms. Lin is not in the office now, who are you?
+I'm Gloria from Nortel. When will Miss Lin come back?
+Gloria, Miss Lin will be back this afternoon.
+Please, please call me when she comes back.
+What is your cell phone number?
+My cell phone number is (517) 3604259.
+OK, Gloria.
+thank you!
+You are welcome! See you.`,
+	},
+	{
 		lesson: "8",
 		chinese: `家文： 大哥，明天 是 幾 月 幾 號?
 大哥： 明天 是 八月 十一號。 噢！ 明天 是 你 的 生日。

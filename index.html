@@ -4,10 +4,10 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Chinese Words</title>
+		<title>Traditional Chinese</title>
 		<meta
 			name="description"
-			content="Chinese Words - Your dictionary for traditional Chinese"
+			content="Traditional Chinese - Your dictionary for traditional Chinese"
 		/>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,28 +20,41 @@
 
 	<body class="bg-black">
 		<div
-			class="filter flex justify-center items-center sticky top-0 bg-black text-sm z-10 p-2"
+			class="filter flex justify-center items-center sticky top-0 bg-black text-sm z-10 p-2 space-x-2 lg:space-x-4"
 		>
 			<h1
-				class="mr-4 lg:mr-8 text-white text-lg lg:text-3xl font-bold uppercase whitespace-nowrap"
+				class="text-white text-xs lg:text-3xl font-bold uppercase whitespace-nowrap"
 			>
-				Chinese Words
+				Traditional<br class="lg:hidden" />
+				Chinese
 			</h1>
-			<input
-				type="text"
-				placeholder="Filter..."
-				data-table-filter="data-table-filter"
-				aria-label="Filter"
-				class="p-2 rounded-none min-w-0 text-base"
-				autocapitalize="none"
-			/>
+
 			<button
 				type="button"
-				data-table-unfilter="data-table-unfilter"
-				class="px-2 py-2 lg:px-4 bg-slate-500 text-white font-bold text-base"
+				class="bg-slate-500 text-white p-1 text-base lg:px-2 lg:font-bold"
+				data-a11y-dialog-show="lesson-list"
 			>
-				Unfilter
+				Lessons
 			</button>
+
+			<div class="relative min-w-0">
+				<input
+					type="text"
+					placeholder="Filter..."
+					data-table-filter="data-table-filter"
+					aria-label="Filter"
+					class="p-1 rounded-none text-base pr-10 max-w-full"
+					autocapitalize="none"
+				/>
+				<button
+					type="button"
+					data-table-unfilter="data-table-unfilter"
+					class="absolute right-0 top-1/2 -translate-y-1/2 text-slate-500 font-bold text-base lg:text-2xl p-2"
+					title="unfilter"
+				>
+					X
+				</button>
+			</div>
 		</div>
 
 		<div class="wrapper lg:flex">
@@ -115,7 +128,7 @@
 			</div>
 		</div>
 
-		<div class="dialog-container" aria-hidden="true" id="lessons">
+		<div class="dialog-container z-10" aria-hidden="true" id="lessons">
 			<div data-a11y-dialog-hide class="dialog-overlay"></div>
 			<div role="document" class="dialog-content">
 				<button
@@ -127,7 +140,7 @@
 					&times;
 				</button>
 				<h1
-					id="your-dialog-title-id"
+					id="dialog-lesson"
 					data-lesson-title
 					class="font-bold text-4xl text-center mb-4"
 				></h1>
@@ -135,7 +148,117 @@
 			</div>
 		</div>
 
+		<div class="dialog-container z-10" aria-hidden="true" id="lesson-list">
+			<div data-a11y-dialog-hide class="dialog-overlay"></div>
+			<div role="document" class="dialog-content">
+				<button
+					type="button"
+					data-a11y-dialog-hide
+					aria-label="Close dialog"
+					class="absolute right-0 top-0 p-2 hover:bg-slate-400 transition-all text-4xl"
+				>
+					&times;
+				</button>
+				<h1 id="dialog-lesson-list" class="font-bold text-4xl text-center mb-4">
+					Lessons list
+				</h1>
+				<ul>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="1"
+							data-a11y-dialog-hide
+						>
+							Lesson 1
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="2"
+							data-a11y-dialog-hide
+						>
+							Lesson 2
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="3"
+							data-a11y-dialog-hide
+						>
+							Lesson 3
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="4"
+							data-a11y-dialog-hide
+						>
+							Lesson 4
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="5"
+							data-a11y-dialog-hide
+						>
+							Lesson 5
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="6"
+							data-a11y-dialog-hide
+						>
+							Lesson 6
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="7"
+							data-a11y-dialog-hide
+						>
+							Lesson 7
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="8"
+							data-a11y-dialog-hide
+						>
+							Lesson 8
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="9"
+							data-a11y-dialog-hide
+						>
+							Lesson 9
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+
 		<script type="module" src="/src/main.js"></script>
 		<script type="module" src="/src/lesson.js"></script>
+		<script type="module" src="/src/lesson-list.js"></script>
 	</body>
 </html>

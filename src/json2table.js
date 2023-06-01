@@ -44,7 +44,7 @@ export const json2table = (obj) => {
 			node.setAttribute("type", "button");
 			node.setAttribute("data-a11y-dialog-show", "lessons");
 			node.setAttribute("data-lesson-trigger", string);
-			node.textContent = `${string} (open)`;
+			node.textContent = `${string}`;
 		} else {
 			node = document.createElement("div");
 			node.textContent = string;
