@@ -10,6 +10,7 @@ document.addEventListener("click", (ev) => {
 	const trigger = ev.target.closest("[data-lesson-trigger]");
 
 	if (trigger) {
+		modalContent.innerHTML = "";
 		const lessonNbr = trigger.getAttribute("data-lesson-trigger");
 		modalTitle.textContent = `Lesson ${lessonNbr}`;
 
