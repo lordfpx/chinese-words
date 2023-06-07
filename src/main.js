@@ -10,13 +10,18 @@ import HanziWriter from "hanzi-writer";
 
 const msg = new SpeechSynthesisUtterance();
 
-window.speechSynthesis.onvoiceschanged = () => {
+function getVoices() {
+	console.log("toto");
 	const voices = window.speechSynthesis.getVoices();
 	const voice = voices.find((voice) => voice.lang === "zh-TW");
 	msg.voice = voice;
 	msg.rate = 0.7;
 	msg.volume = 1;
-};
+}
+
+getVoices();
+
+window.speechSynthesis.addEventListener("voiceschanged", getVoices);
 
 function cleanString(string) {
 	return string
