@@ -11,7 +11,6 @@ import HanziWriter from "hanzi-writer";
 const msg = new SpeechSynthesisUtterance();
 
 function getVoices() {
-	console.log("toto");
 	const voices = window.speechSynthesis.getVoices();
 	const voice = voices.find((voice) => voice.lang === "zh-TW");
 	msg.voice = voice;
@@ -40,7 +39,7 @@ let isOpened = false;
 
 const tableWrapperNode = document.querySelector("[data-table]");
 tableWrapperNode.appendChild(json2table(vocabulary));
-new Tablesort(document.querySelector("table"));
+const sort = new Tablesort(document.querySelector("table"));
 
 const inputNode = document.querySelector("[data-table-filter]");
 const unfilterNode = document.querySelector("[data-table-unfilter]");
@@ -150,6 +149,7 @@ inputNode.addEventListener("input", (ev) => {
 unfilterNode.addEventListener("click", () => {
 	trNodes.forEach((node) => (node.hidden = false));
 	inputNode.value = "";
+	sort.refresh();
 });
 
 // put focus on filter field

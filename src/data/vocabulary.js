@@ -547,13 +547,6 @@ export const vocabulary = [
 		lesson: "6",
 	},
 	{
-		char: "和",
-		pinyin: "hàn",
-		eng: "and",
-		type: "Conj",
-		lesson: "6",
-	},
-	{
 		char: "可是",
 		pinyin: "kě shì",
 		eng: "but",
