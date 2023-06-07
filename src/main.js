@@ -8,6 +8,25 @@ import { json2table } from "./json2table";
 import Tablesort from "tablesort";
 import HanziWriter from "hanzi-writer";
 
+// Enregistrement du service worker
+if ("serviceWorker" in navigator) {
+	navigator.serviceWorker
+		.register("sw.js")
+		.then(function (registration) {
+			console.log("Service Worker enregistré avec succès:", registration);
+		})
+		.catch(function (error) {
+			console.log("Échec de l'enregistrement du Service Worker:", error);
+		});
+}
+
+// Exemple d'utilisation de la fonctionnalité hors ligne
+if (navigator.onLine) {
+	console.log("Le navigateur est en ligne.");
+} else {
+	console.log("Le navigateur est hors ligne.");
+}
+
 const msg = new SpeechSynthesisUtterance();
 
 function getVoices() {
