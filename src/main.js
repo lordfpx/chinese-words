@@ -8,6 +8,15 @@ import { json2table } from "./json2table";
 import Tablesort from "tablesort";
 import HanziWriter from "hanzi-writer";
 
+import { registerSW } from "virtual:pwa-register";
+
+const updateSW = registerSW({
+	onOfflineReady() {},
+	onRegisterError(error) {
+		console.warn({ error });
+	},
+});
+
 // Enregistrement du service worker
 if ("serviceWorker" in navigator) {
 	navigator.serviceWorker
