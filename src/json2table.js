@@ -39,15 +39,24 @@ export const json2table = (obj) => {
 	function lessonCelDisplay(string) {
 		let node;
 
-		if (texts.find((lesson) => lesson.lesson === string)) {
+		if (Array.isArray(string)) {
+			node = document.createElement("div");
+			node.classList.add("space-x-4");
+
+			string.forEach((btn) => {
+				var btnNode = document.createElement("button");
+				btnNode.setAttribute("type", "button");
+				btnNode.setAttribute("data-a11y-dialog-show", "lessons");
+				btnNode.setAttribute("data-lesson-trigger", btn);
+				btnNode.textContent = `${btn}`;
+				node.appendChild(btnNode);
+			});
+		} else {
 			node = document.createElement("button");
 			node.setAttribute("type", "button");
 			node.setAttribute("data-a11y-dialog-show", "lessons");
 			node.setAttribute("data-lesson-trigger", string);
 			node.textContent = `${string}`;
-		} else {
-			node = document.createElement("div");
-			node.textContent = string;
 		}
 
 		return node;

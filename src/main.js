@@ -182,13 +182,10 @@ unfilterNode.addEventListener("click", () => {
 
 // put focus on filter field
 window.addEventListener("keydown", (ev) => {
-	if (
-		ev.keyCode >= 65 &&
-		ev.keyCode <= 90 &&
-		!ev.ctrlKey &&
-		!ev.metaKey &&
-		document.activeElement.tagName !== "INPUT"
-	) {
+	const isAlphabeticKey = ev.key.length === 1 && /[a-z]/i.test(ev.key);
+	const isInputFocused = document.activeElement.tagName === "INPUT";
+
+	if (isAlphabeticKey && !ev.ctrlKey && !ev.metaKey && !isInputFocused) {
 		inputNode.focus();
 	}
 

@@ -922,13 +922,6 @@ export const vocabulary = [
 		lesson: "8",
 	},
 	{
-		char: "要",
-		pinyin: "yào",
-		eng: "to want, to need",
-		type: "V",
-		lesson: "8",
-	},
-	{
 		char: "禮物",
 		pinyin: "lǐ wù",
 		eng: "gift, present",
@@ -1096,16 +1089,9 @@ export const vocabulary = [
 	{
 		char: "要",
 		pinyin: "yào",
-		eng: "to want to",
-		type: "Vaux",
-		lesson: "9",
-	},
-	{
-		char: "要",
-		pinyin: "yào",
 		eng: "to want, to need",
 		type: "Vaux",
-		lesson: "9",
+		lesson: ["8", "9"],
 	},
 	{
 		char: "餐廳",
