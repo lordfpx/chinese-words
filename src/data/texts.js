@@ -1,6 +1,6 @@
 export const texts = [
 	{
-		lesson: "1",
+		lesson: "1-1",
 		chinese: `您好。
 您好。
 我姓王， 請問您貴姓？
@@ -24,7 +24,7 @@ I am American. and you?
 I am Taiwanese`,
 	},
 	{
-		lesson: "2",
+		lesson: "1-2",
 		chinese: `明文，你好。
 你好， Gloria。
 明文，你有兄弟姊妹嗎？
@@ -48,7 +48,7 @@ do you have a brother
 I don't have an older brother, nor a younger brother. I only have one older sister.`,
 	},
 	{
-		lesson: "3",
+		lesson: "1-3",
 		chinese: `Gloria, 你姊姊是學生嗎？
 她不是學生，她大學畢業了。
 她在哪裡工作？
@@ -69,7 +69,7 @@ Your sister is married. Do they have children?
 They have two children, a son and a daughter. Both children are in elementary school.`,
 	},
 	{
-		lesson: "4",
+		lesson: "1-4",
 		chinese: `明文，請問你爸爸，媽媽在哪裡工作？
 我爸爸在電腦公司工作，我媽媽是小學老師。
 你爸爸的工作忙不忙？
@@ -93,7 +93,7 @@ She likes children, she said teaching is not tiring.
 My dad is also a teacher, he teaches French at the university.`,
 	},
 	{
-		lesson: "5",
+		lesson: "1-5",
 		chinese: `Gloria, 好久不見。
 你好，好久不見。
 這是我弟弟, 王家文. 家文, 這是我朋友, Gloria。
@@ -123,7 +123,7 @@ Welcome to America. Where do you want to play?
 I want to go to Disneyland, and I want to go to national parks.`,
 	},
 	{
-		lesson: "6",
+		lesson: "1-6",
 		chinese: `家文， 你喜不喜歡運動？
 我喜歡運動， 我平常喜歡跑步。
 你哥哥平常喜歡做什麼？
@@ -150,7 +150,7 @@ J'aime aussi regarder la télé, je regarde la télé à la maison le soir.
 Je suis à Taïwan et j'aime aller courir dans le parc la nuit.`,
 	},
 	{
-		lesson: "7",
+		lesson: "1-7",
 		chinese: `喂，台一銀行，您好！
 喂，您好！請問林美美小姐在嗎？
 林小姐現在不在辦公室，請問您是哪位？
@@ -186,7 +186,7 @@ thank you!
 You are welcome! See you.`,
 	},
 	{
-		lesson: "8",
+		lesson: "1-8",
 		chinese: `家文： 大哥，明天 是 幾 月 幾 號?
 大哥： 明天 是 八月 十一號。 噢！ 明天 是 你 的 生日。
 家文： 是啊！ 明天 是 我 十七歲 的 生日?
@@ -216,7 +216,7 @@ Brother: OK, no problem.
 Jiawen: Thank you, brother.`,
 	},
 	{
-		lesson: "9",
+		lesson: "1-9",
 		chinese: `Gloria,  好 久 不 見。
 你 好。 明文， 這 位 是 我 同事 Lisa。
 Lisa, 很 高興 認識 你。

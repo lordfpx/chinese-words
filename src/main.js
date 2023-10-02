@@ -72,22 +72,9 @@ const sort = new Tablesort(document.querySelector("table"));
 const inputNode = document.querySelector("[data-table-filter]");
 const unfilterNode = document.querySelector("[data-table-unfilter]");
 const detailsNode = document.querySelector("[data-details]");
-// const speachBtnNode = document.querySelector("[data-speach]");
-// const detailsIframeNode = document.querySelector("[data-details-iframe]");
 const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
 
 const sanitizedWords = trNodes.map((node) => cleanString(node.textContent));
-
-// load iframe on the 1st word
-// detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${
-// 	trNodes[0].querySelector("[data-details-open]").textContent
-// }`;
-
-// iframe loaded
-// detailsIframeNode.addEventListener("load", () => {
-// 	detailsIframeNode.style.opacity = 1;
-// 	inputNode.focus();
-// });
 
 const writer = HanziWriter.create(
 	"character-target",
@@ -111,9 +98,6 @@ document.addEventListener("click", (ev) => {
 	const modeNode = ev.target.closest("[data-mode]");
 
 	if (openNode) {
-		// detailsIframeNode.style.opacity = 0;
-		// detailsIframeNode.src = `https://www.mdbg.net/chinese/dictionary?page=worddict${optionsQueryParams}&wdqb=${openNode.dataset.detailsOpen}`;
-
 		writer.setCharacter(openNode.dataset.detailsOpen);
 		writer.animateCharacter();
 
