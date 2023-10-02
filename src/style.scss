@@ -88,7 +88,7 @@
 	}
 
 	[data-details-open] {
-		@apply border-none text-blue-700 bg-transparent p-0 font-chinese;
+		@apply border-none text-blue-700 bg-transparent p-0 font-chinese text-5xl md:text-5xl;
 
 		&:hover {
 			text-decoration: underline;
