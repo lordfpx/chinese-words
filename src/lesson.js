@@ -1,5 +1,8 @@
 import A11yDialog from "a11y-dialog";
-import { texts } from "./data/texts";
+import { texts1 } from "./data/texts-1";
+import { texts2 } from "./data/texts-2";
+
+const texts = texts1.concat(texts2);
 
 const modal = document.querySelector("#lessons");
 const dialog = new A11yDialog(modal);

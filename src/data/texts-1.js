@@ -1,4 +1,4 @@
-export const texts = [
+export const texts1 = [
 	{
 		lesson: "1-1",
 		chinese: `您好。

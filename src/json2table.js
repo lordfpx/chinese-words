@@ -1,4 +1,4 @@
-import { texts } from "./data/texts";
+// import { texts } from "./data/texts";
 
 export const json2table = (obj) => {
 	const table = document.createElement("table");
