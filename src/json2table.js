@@ -97,7 +97,7 @@ export const json2table = (obj) => {
 			const pinyinDiv = document.createElement("div");
 			pinyinDiv.setAttribute(
 				"class",
-				"whitespace-nowrap lg:text-2xl font-mono lg:inline-block lg:mr-4"
+				"lg:text-2xl font-mono lg:inline-block lg:mr-4"
 			);
 			pinyinDiv.textContent = word.pinyin;
 			newTd.appendChild(pinyinDiv);
