@@ -449,7 +449,7 @@ export const vocabulary = [
 		pinyin: "jīn tiān",
 		eng: "today",
 		type: "N",
-		lesson: "1-4",
+		lesson: ["1-4", "1-8"],
 	},
 
 	// lesson 5 (to continue...)
@@ -939,13 +939,6 @@ export const vocabulary = [
 		char: "運動鞋",
 		pinyin: "yùn dòng xié",
 		eng: "sports shoes, sneakers",
-		type: "N",
-		lesson: "1-8",
-	},
-	{
-		char: "今天",
-		pinyin: "jīn tiān",
-		eng: "today",
 		type: "N",
 		lesson: "1-8",
 	},

@@ -178,3 +178,9 @@ window.addEventListener("keydown", (ev) => {
 		inputNode.dispatchEvent(new CustomEvent("input"));
 	}
 });
+
+window.chineseExport = () => {
+	return vocabulary.reduce((acc, item, index) => {
+		return acc + item.char + ";" + item.eng + "\n";
+	}, "");
+};

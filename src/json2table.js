@@ -1,5 +1,3 @@
-// import { texts } from "./data/texts";
-
 export const json2table = (obj) => {
 	const table = document.createElement("table");
 	const tr = document.createElement("tr");
