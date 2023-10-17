@@ -3,12 +3,15 @@
 import "./modal.scss";
 import "./style.scss";
 
-import { vocabulary } from "./data/vocabulary";
+import { vocabulary1 } from "./data/vocabulary-1";
+import { vocabulary2 } from "./data/vocabulary-2";
 import { json2table } from "./json2table";
 import Tablesort from "tablesort";
 import HanziWriter from "hanzi-writer";
 
 import { registerSW } from "virtual:pwa-register";
+
+const vocabulary = vocabulary1.concat(vocabulary2);
 
 const updateSW = registerSW({
 	onOfflineReady() {},

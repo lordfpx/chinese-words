@@ -1,4 +1,4 @@
-export const vocabulary = [
+export const vocabulary1 = [
 	// lesson 1
 	{
 		char: "您",
@@ -698,9 +698,9 @@ export const vocabulary = [
 	{
 		char: "給",
 		pinyin: "gěi",
-		eng: "to",
-		type: "Prep",
-		lesson: "1-7",
+		eng: "to, to give",
+		type: "Prep/V",
+		lesson: ["1-7", "2-1"],
 	},
 	{
 		char: "電話",
@@ -1185,76 +1185,5 @@ export const vocabulary = [
 		eng: "Excellent! Great!",
 		type: "",
 		lesson: "1-9",
-	},
-
-	{
-		char: "天氣",
-		pinyin: "tiān qì",
-		eng: "Weather",
-		type: "N",
-		lesson: "2-1",
-	},
-	{
-		char: "這裡",
-		pinyin: "zhè lǐ",
-		eng: "Here",
-		type: "Pron",
-		lesson: "2-1",
-	},
-	{
-		char: "真",
-		pinyin: "zhēn",
-		eng: "Really",
-		type: "Adv",
-		lesson: "2-1",
-	},
-	{
-		char: "舒服",
-		pinyin: "shū fū",
-		eng: "Comfortable",
-		type: "Vs",
-		lesson: "2-1",
-	},
-	{
-		char: "夏天",
-		pinyin: "xià tiān",
-		eng: "Comfortable",
-		type: "Vs",
-		lesson: "2-1",
-	},
-	{
-		char: "比",
-		pinyin: "bǐ",
-		eng: "More than (comparison)",
-		type: "Prep",
-		lesson: "2-1",
-	},
-	{
-		char: "春天",
-		pinyin: "chūn tiān",
-		eng: "Spring",
-		type: "N",
-		lesson: "2-1",
-	},
-	{
-		char: "秋天",
-		pinyin: "qiū tiān",
-		eng: "Fall, Autumn",
-		type: "N",
-		lesson: "2-1",
-	},
-	{
-		char: "冷",
-		pinyin: "lěng",
-		eng: "Cold",
-		type: "Vs",
-		lesson: "2-1",
-	},
-	{
-		char: "熱",
-		pinyin: "rè",
-		eng: "Hot",
-		type: "Vs",
-		lesson: "2-1",
 	},
 ];
