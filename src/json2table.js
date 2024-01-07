@@ -24,7 +24,8 @@ export const json2table = (obj) => {
 
 			word.split("").forEach((letter) => {
 				const newBtn = btn.cloneNode();
-				newBtn.setAttribute("data-details-open", letter);
+				newBtn.setAttribute("data-a11y-dialog-show", "character-draw");
+				newBtn.setAttribute("data-character-open", letter);
 				newBtn.textContent = letter;
 				fragment.appendChild(newBtn);
 			});

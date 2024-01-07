@@ -7,7 +7,6 @@ import { vocabulary1 } from "./data/vocabulary-1";
 import { vocabulary2 } from "./data/vocabulary-2";
 import { json2table } from "./json2table";
 import Tablesort from "tablesort";
-import HanziWriter from "hanzi-writer";
 
 import { registerSW } from "virtual:pwa-register";
 
@@ -33,11 +32,11 @@ if ("serviceWorker" in navigator) {
 }
 
 // Exemple d'utilisation de la fonctionnalité hors ligne
-if (navigator.onLine) {
-	console.log("Le navigateur est en ligne.");
-} else {
-	console.log("Le navigateur est hors ligne.");
-}
+// if (navigator.onLine) {
+// 	console.log("Le navigateur est en ligne.");
+// } else {
+// 	console.log("Le navigateur est hors ligne.");
+// }
 
 const msg = new SpeechSynthesisUtterance();
 
@@ -66,7 +65,6 @@ function cleanString(string) {
 
 // const optionsQueryParams = "&dmsm=0&wdrst=1&rfs=1&dhlm=0";
 // const optionsQueryParams = "&wdrst=1";
-let isOpened = false;
 
 const tableWrapperNode = document.querySelector("[data-table]");
 tableWrapperNode.appendChild(json2table(vocabulary));
@@ -74,74 +72,12 @@ const sort = new Tablesort(document.querySelector("table"));
 
 const inputNode = document.querySelector("[data-table-filter]");
 const unfilterNode = document.querySelector("[data-table-unfilter]");
-const detailsNode = document.querySelector("[data-details]");
 const trNodes = [...tableWrapperNode.querySelectorAll("tbody tr")];
 
 const sanitizedWords = trNodes.map((node) => cleanString(node.textContent));
 
-const writer = HanziWriter.create(
-	"character-target",
-	trNodes[0].querySelector("[data-details-open]").textContent,
-	{
-		width: 300,
-		height: 300,
-		padding: 0,
-		delayBetweenLoops: 2000,
-		delayBetweenStrokes: 300,
-		strokeAnimationSpeed: 0.7,
-	}
-);
-
-writer.loopCharacterAnimation();
-
 document.addEventListener("click", (ev) => {
-	const openNode = ev.target.closest("[data-details-open]");
-	const toggleNode = ev.target.closest("[data-details-toggle]");
 	const speachNode = ev.target.closest("[data-speach]");
-	const modeNode = ev.target.closest("[data-mode]");
-
-	if (openNode) {
-		writer.setCharacter(openNode.dataset.detailsOpen);
-		writer.animateCharacter();
-
-		if (!isOpened) {
-			isOpened = true;
-			detailsNode.style.transform = "translateY(0)";
-		}
-	}
-
-	if (modeNode) {
-		const mode = modeNode.getAttribute("data-mode");
-
-		switch (mode) {
-			case "play":
-				writer.showCharacter();
-				writer.showOutline();
-				writer.animateCharacter();
-				break;
-			case "quiz":
-				writer.showCharacter();
-				writer.showOutline();
-				writer.quiz();
-				break;
-			case "blind-quiz":
-				writer.hideCharacter();
-				writer.hideOutline();
-				writer.quiz({
-					showHintAfterMisses: 3,
-				});
-				break;
-		}
-	}
-
-	if (toggleNode) {
-		if (isOpened) {
-			detailsNode.style.transform = "translateY(100%)";
-		} else {
-			detailsNode.style.transform = "translateY(0)";
-		}
-		isOpened = !isOpened;
-	}
 
 	if (speachNode) {
 		window.speechSynthesis.cancel();
