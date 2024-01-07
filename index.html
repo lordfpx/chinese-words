@@ -11,35 +11,47 @@
 		/>
 
 		<script>
-			(function(d) {
+			(function (d) {
 				var config = {
-					kitId: 'eju7trp',
-					scriptTimeout: 3000,
-					async: true
-				},
-				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+						kitId: "eju7trp",
+						scriptTimeout: 3000,
+						async: true,
+					},
+					h = d.documentElement,
+					t = setTimeout(function () {
+						h.className =
+							h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+					}, config.scriptTimeout),
+					tk = d.createElement("script"),
+					f = false,
+					s = d.getElementsByTagName("script")[0],
+					a;
+				h.className += " wf-loading";
+				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+				tk.async = true;
+				tk.onload = tk.onreadystatechange = function () {
+					a = this.readyState;
+					if (f || (a && a != "complete" && a != "loaded")) return;
+					f = true;
+					clearTimeout(t);
+					try {
+						Typekit.load(config);
+					} catch (e) {}
+				};
+				s.parentNode.insertBefore(tk, s);
 			})(document);
 		</script>
 	</head>
 
-	<body class="bg-black">
+	<body class="bg-black max-lg:h-dvh max-lg:overflow-hidden">
 		<div
-			class="filter flex justify-center items-center sticky top-0 bg-black text-sm z-10 p-1 space-x-2 lg:space-x-4"
+			class="filter flex justify-center items-center bg-black text-sm z-10 p-1 space-x-2 lg:space-x-4"
 		>
 			<h1
 				class="text-white text-xs lg:text-3xl font-bold uppercase whitespace-nowrap"
 			>
-				Traditional<br class="lg:hidden" />
-				Chinese
+				Traditional Chinese
 			</h1>
-
-			<button
-				type="button"
-				class="bg-slate-500 text-white p-1 text-base lg:px-2 lg:font-bold"
-				data-a11y-dialog-show="lesson-list"
-			>
-				Open Lessons
-			</button>
 
 			<div class="relative min-w-0 w-40 lg:w-56">
 				<input
@@ -61,78 +73,51 @@
 			</div>
 		</div>
 
-		<div class="wrapper lg:flex">
+		<div
+			class="group wrapper flex max-lg:flex-col max-lg:h-[calc(100dvh-2rem)]"
+			data-lesson-toggle-wrapper
+		>
 			<div
 				data-table
-				class="relative overflow-auto min-w-0 w-full lg:w-4/5 lg:resize-x bg-slate-300"
+				class="transition-all max-lg:group-[.is-opened]:min-h-[80%] lg:group-[.is-opened]:min-w-[80%] min-h-0 relative overflow-auto lg:resize-x bg-slate-300 max-lg:h-1/2"
 			></div>
 
 			<div
-				data-details
-				class="bg-black max-lg:translate-y-full transition-transform fixed bottom-0 left-0 w-full min-w-0 lg:w-1/5 lg:grow lg:relative lg:bottom-auto lg:left-auto lg:h-full"
+				class="bg-white p-2 max-lg:border-t-4 lg:border-l-4 border-black overflow-auto max-lg:h-1/2"
 			>
-				<!-- <iframe
-					data-details-iframe
-					class="border-0 absolute top-0 left-0 w-full h-full transition-opacity z-10"
-				></iframe>
-
-				<p
-					class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white"
-				>
-					Loading...
-				</p> -->
-
-				<div class="p-6">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="300"
-						height="300"
-						id="character-target"
-						class="block mx-auto bg-white !w-full !h-auto"
-						viewBox="0 0 300 300"
-					>
-						<line x1="0" y1="0" x2="300" y2="300" stroke="#DDD" />
-						<line x1="300" y1="0" x2="0" y2="300" stroke="#DDD" />
-						<line x1="150" y1="0" x2="150" y2="300" stroke="#DDD" />
-						<line x1="0" y1="150" x2="300" y2="150" stroke="#DDD" />
-					</svg>
-
-					<div class="space-x-2 mt-2">
-						<button
-							type="button"
-							class="text-white border border-white p-2"
-							data-mode="play"
-						>
-							Play
-						</button>
-						<button
-							type="button"
-							class="text-white border border-white p-2"
-							data-mode="quiz"
-						>
-							Draw
-						</button>
-						<button
-							type="button"
-							class="text-white border border-white p-2"
-							data-mode="blind-quiz"
-						>
-							Quiz
-						</button>
-					</div>
-				</div>
-
 				<button
 					type="button"
-					data-details-toggle
-					class="absolute top-0 right-0 -translate-y-full font-bold p-3 bg-black text-white lg:hidden"
+					class="bg-slate-500 text-white p-1 text-base lg:px-2 lg:font-bold"
+					data-lesson-toggle
 				>
-					Toggle details
+					<span class="hidden group-[.is-opened]:block">Open</span>
+					<span class="group-[.is-opened]:hidden">Close</span>
 				</button>
+				<button
+					type="button"
+					class="bg-slate-500 text-white p-1 text-base lg:px-2 lg:font-bold"
+					data-a11y-dialog-show="lesson-list"
+				>
+					Change Lesson
+				</button>
+
+				<div data-lesson>
+					<h1
+						id="dialog-lesson-title"
+						data-lesson-title
+						class="font-bold text-4xl text-center mb-4"
+					></h1>
+					<div data-lesson-content class="space-y-4 lg:space-y-6"></div>
+				</div>
 			</div>
 		</div>
 
-		<div class="dialog-container z-10" aria-hidden="true" id="lessons">
+		<div
+			class="dialog-container z-10"
+			aria-hidden="true"
+			aria-labelledby="dialog-lesson-list-title"
+			id="lesson-list"
+		>
 			<div data-a11y-dialog-hide class="dialog-overlay"></div>
 			<div role="document" class="dialog-content">
 				<button
@@ -144,32 +129,13 @@
 					&times;
 				</button>
 				<h1
-					id="dialog-lesson"
-					data-lesson-title
+					id="dialog-lesson-list-title"
 					class="font-bold text-4xl text-center mb-4"
-				></h1>
-				<div data-lesson-content class="space-y-4 lg:space-y-6"></div>
-			</div>
-		</div>
-
-		<div class="dialog-container z-10" aria-hidden="true" id="lesson-list">
-			<div data-a11y-dialog-hide class="dialog-overlay"></div>
-			<div role="document" class="dialog-content">
-				<button
-					type="button"
-					data-a11y-dialog-hide
-					aria-label="Close dialog"
-					class="absolute right-0 top-0 p-2 hover:bg-slate-400 transition-all text-4xl"
 				>
-					&times;
-				</button>
-				<h1 id="dialog-lesson-list" class="font-bold text-4xl text-center mb-4">
 					Lessons list
 				</h1>
 
-				<h2 id="dialog-lesson-list" class="font-bold text-xl text-center mb-4">
-					Book 1
-				</h1>
+				<h2 class="font-bold text-xl text-center mb-4">Book 1</h2>
 				<ul>
 					<li>
 						<button
@@ -263,9 +229,7 @@
 					</li>
 				</ul>
 
-				<h2 id="dialog-lesson-list" class="font-bold text-xl text-center mb-4">
-					Book 2
-				</h1>
+				<h2 class="font-bold text-xl text-center mb-4">Book 2</h2>
 				<ul>
 					<li>
 						<button
@@ -287,11 +251,76 @@
 							Lesson 2-2
 						</button>
 					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div
+			class="dialog-container z-10"
+			aria-hidden="true"
+			aria-labelledby="dialog-character-draw-title"
+			id="character-draw"
+		>
+			<div data-a11y-dialog-hide class="dialog-overlay"></div>
+			<div role="document" class="dialog-content">
+				<button
+					type="button"
+					data-a11y-dialog-hide
+					aria-label="Close dialog"
+					class="absolute right-0 top-0 p-2 hover:bg-slate-400 transition-all text-4xl"
+				>
+					&times;
+				</button>
+				<h1
+					id="dialog-character-draw-title"
+					class="font-bold text-4xl text-center mb-4"
+				>
+					Character
+				</h1>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="300"
+					height="300"
+					id="character-target"
+					class="block mx-auto bg-white border"
+					viewBox="0 0 300 300"
+				>
+					<line x1="0" y1="0" x2="300" y2="300" stroke="#DDD" />
+					<line x1="300" y1="0" x2="0" y2="300" stroke="#DDD" />
+					<line x1="150" y1="0" x2="150" y2="300" stroke="#DDD" />
+					<line x1="0" y1="150" x2="300" y2="150" stroke="#DDD" />
+				</svg>
+
+				<div class="flex justify-center gap-2 mt-2">
+					<button
+						type="button"
+						class="border p-2 hover:bg-slate-300 transition-colors"
+						data-mode="play"
+					>
+						Play
+					</button>
+					<button
+						type="button"
+						class="border p-2 hover:bg-slate-300 transition-colors"
+						data-mode="quiz"
+					>
+						Draw
+					</button>
+					<button
+						type="button"
+						class="border p-2 hover:bg-slate-300 transition-colors"
+						data-mode="blind-quiz"
+					>
+						Quiz
+					</button>
+				</div>
 			</div>
 		</div>
 
 		<script type="module" src="/src/main.js"></script>
 		<script type="module" src="/src/lesson.js"></script>
 		<script type="module" src="/src/lesson-list.js"></script>
+		<script type="module" src="/src/character-draw.js"></script>
 	</body>
 </html>
