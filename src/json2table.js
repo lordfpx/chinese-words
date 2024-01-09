@@ -26,6 +26,7 @@ export const json2table = (obj) => {
 				const newBtn = btn.cloneNode();
 				newBtn.setAttribute("data-a11y-dialog-show", "character-draw");
 				newBtn.setAttribute("data-character-open", letter);
+				newBtn.classList.add("font-chinese");
 				newBtn.textContent = letter;
 				fragment.appendChild(newBtn);
 			});
