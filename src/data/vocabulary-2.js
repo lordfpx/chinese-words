@@ -419,4 +419,55 @@ export const vocabulary2 = [
 		type: "QPr",
 		lesson: "2-2",
 	},
+
+	// lesson 3
+	{
+		char: "紅燒",
+		pinyin: "hòngshāo",
+		eng: "To braise on soy-sauce",
+		type: "V",
+		lesson: "2-3",
+	},
+	{
+		char: "魚",
+		pinyin: "yú",
+		eng: "Fish",
+		type: "N",
+		lesson: "2-3",
+	},
+	{
+		char: "非常",
+		pinyin: "fēicháng",
+		eng: "Very, extremely, exceedingly",
+		type: "Adv",
+		lesson: "2-3",
+	},
+	{
+		char: "愛",
+		pinyin: "ài",
+		eng: "To love",
+		type: "V",
+		lesson: "2-3",
+	},
+	{
+		char: "豆腐",
+		pinyin: "dòufǔ",
+		eng: "Tofu",
+		type: "N",
+		lesson: "2-3",
+	},
+	{
+		char: "還是",
+		pinyin: "háishì",
+		eng: "or (used in question)",
+		type: "Conj",
+		lesson: "2-3",
+	},
+	{
+		char: "青菜",
+		pinyin: "qīngcài",
+		eng: "Green vegetables",
+		type: "N",
+		lesson: "2-3",
+	},
 ];
