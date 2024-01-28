@@ -79,15 +79,15 @@
 		>
 			<div
 				data-table
-				class="transition-all max-lg:group-[.is-opened]:min-h-[80%] lg:group-[.is-opened]:min-w-[80%] min-h-0 relative overflow-auto lg:resize-x bg-slate-300 max-lg:h-1/2 lg:grow"
+				class="transition-all lg:w-1/2 min-h-0 relative overflow-auto bg-slate-300 max-lg:group-[.is-opened]:h-full max-lg:h-1/4"
 			></div>
 
 			<div
-				class="bg-white p-2 max-lg:border-t-4 lg:border-l-4 border-black overflow-auto max-lg:h-1/2 lg:grow"
+				class="transition-all bg-white p-2 max-lg:border-t-4 lg:border-l-4 border-black overflow-auto max-lg:group-[.is-opened]:min-h-16 max-lg:min-h-0 flex-1"
 			>
 				<button
 					type="button"
-					class="bg-slate-500 text-white p-1 text-base lg:px-2 lg:font-bold"
+					class="lg:hidden bg-slate-500 text-white p-1 text-base lg:px-2 lg:font-bold"
 					data-lesson-toggle
 				>
 					<span class="hidden group-[.is-opened]:block">Open</span>
@@ -101,12 +101,15 @@
 					Change Lesson
 				</button>
 
-				<div data-lesson>
+				<div data-lesson className="max-lg:group-[.is-opened]:opacity-30">
 					<h1
 						data-lesson-title
 						class="font-bold text-4xl text-center mb-4"
 					></h1>
-					<div data-lesson-content class="space-y-4 lg:space-y-6"></div>
+					<div
+						data-lesson-content
+						class="space-y-4 lg:space-y-6 max-lg:group-[.is-opened]:opacity-30"
+					></div>
 				</div>
 			</div>
 		</div>
@@ -248,6 +251,16 @@
 							data-a11y-dialog-hide
 						>
 							Lesson 2-2
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							data-a11y-dialog-show="lessons"
+							data-lesson-trigger="2-3"
+							data-a11y-dialog-hide
+						>
+							Lesson 2-3
 						</button>
 					</li>
 				</ul>

@@ -71,4 +71,40 @@ When do we go out on Saturday?
 One o'clock in the afternoon, okay?
 OK, thank you, brother.`,
 	},
+	{
+		lesson: "2-3",
+		chinese: `莉亞，這家餐廳的紅燒魚做得很好，非常好吃。
+我最喜歡吃魚，什麼魚都愛吃。
+麗莎，妳想吃豆腐還是青菜？
+我想吃豆腐，也想吃青菜。
+好，我們點一個紅燒魚，一個炸豆腐，一盤炒青菜，三碗白飯。妳們還想吃什麼？
+點一碗酸辣湯吧！酸辣湯又酸又辣，真好喝！
+太好了！我也想喝酸辣湯。我還要一瓶啤酒。
+聽說這家餐廳的包子做的不錯。
+那麼，我們也點兩個豆沙包，怎麼樣？
+好。小姐，我們要點菜。
+請問三位要點什麼？`,
+		pinyin: `Lì yà, zhè jiā cāntīng de hóngshāo yú zuò dé hěn hǎo, fēicháng hào chī.
+Wǒ zuì xǐhuān chī yú, shénme yú dōu ài chī.
+Lì shā, nǎi xiǎng chī dòufu háishì qīngcài?
+Wǒ xiǎng chī dòufu, yě xiǎng chī qīngcài.
+Hǎo, wǒmen diǎn yīgè hóngshāo yú, yīgè zhà dòufu, yī pán chǎo qīngcài, sān wǎn báifàn. Nǎimen hái xiǎng chī shénme?
+Diǎn yī wǎn suān làtāng ba! Suān làtāng yòu suān yòu là, zhēn hǎo hē!
+Tài hǎole! Wǒ yě xiǎng hē suān làtāng. Wǒ hái yào yī píng píjiǔ.
+Tīng shuō zhè jiā cāntīng de bāozi zuò de bùcuò.
+Nàme, wǒmen yě diǎn liǎng gè dòushā bāo, zěnme yàng?
+Hǎo. Xiǎojiě, wǒmen yàodiǎn cài.
+Qǐngwèn sān wèi yàodiǎn shénme?`,
+		english: `Leah, the braised fish at this restaurant is very well done and very tasty.
+I like to eat fish the most, and I like to eat all kinds of fish.
+Lisa, would you like tofu or vegetables?
+I want to eat tofu and vegetables.
+Okay, let's order a braised fish, a fried tofu, a plate of fried vegetables, and three bowls of rice. What else do you want to eat?
+Order a bowl of hot and sour soup! The hot and sour soup is sour and spicy, so delicious!
+Very good! I also want to drink hot and sour soup. I'd also like a bottle of beer.
+I heard that this restaurant's steamed buns are pretty good.
+So, how about we also order two bean paste buns?
+good. Madam, we want to order some food.
+What do you three want?`,
+	},
 ];
