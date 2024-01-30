@@ -84,11 +84,11 @@ OK, thank you, brother.`,
 那麼，我們也點兩個豆沙包，怎麼樣？
 好。小姐，我們要點菜。
 請問三位要點什麼？`,
-		pinyin: `Lì yà, zhè jiā cāntīng de hóngshāo yú zuò dé hěn hǎo, fēicháng hào chī.
+		pinyin: `Lì yà, zhè jiā cāntīng de hóngshāo yú zuò de hěn hǎo, fēicháng hào chī.
 Wǒ zuì xǐhuān chī yú, shénme yú dōu ài chī.
-Lì shā, nǎi xiǎng chī dòufu háishì qīngcài?
+Lì shā, nǐ xiǎng chī dòufu háishì qīngcài?
 Wǒ xiǎng chī dòufu, yě xiǎng chī qīngcài.
-Hǎo, wǒmen diǎn yīgè hóngshāo yú, yīgè zhà dòufu, yī pán chǎo qīngcài, sān wǎn báifàn. Nǎimen hái xiǎng chī shénme?
+Hǎo, wǒmen diǎn yīgè hóngshāo yú, yīgè zhà dòufu, yī pán chǎo qīngcài, sān wǎn báifàn. nǐ men hái xiǎng chī shénme?
 Diǎn yī wǎn suān làtāng ba! Suān làtāng yòu suān yòu là, zhēn hǎo hē!
 Tài hǎole! Wǒ yě xiǎng hē suān làtāng. Wǒ hái yào yī píng píjiǔ.
 Tīng shuō zhè jiā cāntīng de bāozi zuò de bùcuò.
