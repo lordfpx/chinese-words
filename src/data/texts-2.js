@@ -88,7 +88,7 @@ OK, thank you, brother.`,
 Wǒ zuì xǐhuān chī yú, shénme yú dōu ài chī.
 Lì shā, nǐ xiǎng chī dòufu háishì qīngcài?
 Wǒ xiǎng chī dòufu, yě xiǎng chī qīngcài.
-Hǎo, wǒmen diǎn yīgè hóngshāo yú, yīgè zhà dòufu, yī pán chǎo qīngcài, sān wǎn báifàn. nǐ men hái xiǎng chī shénme?
+Hǎo, wǒmen diǎn yīgè hóngshāo yú, yīgè zhà dòufu, yī pán chǎo qīngcài, sān wǎn báifàn. nǐmen hái xiǎng chī shénme?
 Diǎn yī wǎn suān làtāng ba! Suān làtāng yòu suān yòu là, zhēn hǎo hē!
 Tài hǎole! Wǒ yě xiǎng hē suān làtāng. Wǒ hái yào yī píng píjiǔ.
 Tīng shuō zhè jiā cāntīng de bāozi zuò de bùcuò.
