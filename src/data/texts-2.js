@@ -84,17 +84,17 @@ OK, thank you, brother.`,
 那麼，我們也點兩個豆沙包，怎麼樣？
 好。小姐，我們要點菜。
 請問三位要點什麼？`,
-		pinyin: `Lì yà, zhè jiā cāntīng de hóngshāo yú zuò de hěn hǎo, fēicháng hào chī.
+		pinyin: `Lìyà, zhèi jiā cāntīng de hóngshāo yú zuò de hěn hǎo, fēicháng hào chī.
 Wǒ zuì xǐhuān chī yú, shénme yú dōu ài chī.
-Lì shā, nǐ xiǎng chī dòufu háishì qīngcài?
+Lìshā, nǐ xiǎng chī dòufu háishì qīngcài?
 Wǒ xiǎng chī dòufu, yě xiǎng chī qīngcài.
-Hǎo, wǒmen diǎn yīgè hóngshāo yú, yīgè zhà dòufu, yī pán chǎo qīngcài, sān wǎn báifàn. nǐmen hái xiǎng chī shénme?
-Diǎn yī wǎn suān làtāng ba! Suān làtāng yòu suān yòu là, zhēn hǎo hē!
-Tài hǎole! Wǒ yě xiǎng hē suān làtāng. Wǒ hái yào yī píng píjiǔ.
-Tīng shuō zhè jiā cāntīng de bāozi zuò de bùcuò.
-Nàme, wǒmen yě diǎn liǎng gè dòushā bāo, zěnme yàng?
-Hǎo. Xiǎojiě, wǒmen yàodiǎn cài.
-Qǐngwèn sān wèi yàodiǎn shénme?`,
+Hǎo, wǒmen diǎn yī ge hóngshāo yú, yī ge zhà dòufu, yī pán chǎo qīngcài, sān wǎn báifàn. Nǐmen hái xiǎng chī shénme?
+Diǎn yī wǎn suānlà tāng ba! Suānlà tāng yòu suān yòu là, zhēn hǎo hē!
+Tài hǎo le! Wǒ yě xiǎng hē suānlà tāng. Wǒ hái yào yī píng píjiǔ.
+Tīng shuō zhèi jiā cāntīng de bāozi zuò de bùcuò.
+Nàme, wǒmen yě diǎn liǎng ge dòushā bāo, zěnmeyàng?
+Hǎo. Xiǎojiě, wǒmen yào diǎn cài.
+Qǐng wèn sān wèi yào diǎn shénme?`,
 		english: `Leah, the braised fish at this restaurant is very well done and very tasty.
 I like to eat fish the most, and I like to eat all kinds of fish.
 Lisa, would you like tofu or vegetables?
