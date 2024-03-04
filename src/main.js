@@ -44,7 +44,7 @@ function getVoices() {
 	const voices = window.speechSynthesis.getVoices();
 	const voice = voices.find((voice) => voice.lang === "zh-TW");
 	msg.voice = voice;
-	msg.rate = 1;
+	msg.rate = 0.2;
 	msg.volume = 1;
 }
 
