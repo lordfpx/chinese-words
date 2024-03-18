@@ -626,4 +626,13 @@ export const vocabulary2 = [
 		type: "V",
 		lesson: "2-3",
 	},
+
+	// lesson 4
+	{
+		char: "加",
+		pinyin: "jiā",
+		eng: "to add",
+		type: "V",
+		lesson: "2-4",
+	},
 ];
