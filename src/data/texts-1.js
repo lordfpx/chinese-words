@@ -22,6 +22,13 @@ My last name is Lee and my name is Gloria. What is your name?
 My name is Mingwen. What country are you from?
 I am American. and you?
 I am Taiwanese`,
+		french: `Bonjour.
+Bonjour.
+Je m'appelle Wang, puis-je demander votre nom ?
+Je m'appelle Lee, Gloria. Et vous, comment vous appelez-vous ?
+Je m'appelle Mingwen. De quel pays venez-vous ?
+Je suis américaine. Et vous ?
+Je suis taïwanais.`,
 	},
 	{
 		lesson: "1-2",
@@ -46,6 +53,13 @@ I have an older sister and two younger brothers. And you?
 I also have a sister.
 do you have a brother
 I don't have an older brother, nor a younger brother. I only have one older sister.`,
+		french: `Mingwen, bonjour.
+Bonjour, Gloria.
+Mingwen, as-tu des frères et sœurs ?
+J'ai une sœur et deux frères. Et toi ?
+Moi aussi, j'ai une sœur.
+As-tu un grand frère ?
+Je n'ai pas de grand frère, ni de petit frère. Je n'ai qu'une sœur.`,
 	},
 	{
 		lesson: "1-3",
@@ -67,6 +81,12 @@ where does she work
 My sister works in a bank and her husband works in a computer company.
 Your sister is married. Do they have children?
 They have two children, a son and a daughter. Both children are in elementary school.`,
+		french: `Gloria, ta sœur est-elle étudiante ?
+Elle n'est pas étudiante, elle a fini l'université.
+Où travaille-t-elle ?
+Ma sœur travaille dans une banque, et son mari travaille dans une entreprise d'informatique.
+Ta sœur est mariée, ont-ils des enfants ?
+Ils ont deux enfants, un fils et une fille. Les deux enfants sont à l'école primaire.`,
 	},
 	{
 		lesson: "1-4",
@@ -91,6 +111,13 @@ His work is very busy and he is very tired every day.
 And your mom?
 She likes children, she said teaching is not tiring.
 My dad is also a teacher, he teaches French at the university.`,
+		french: `Mingwen, peux-tu me dire où travaillent ton père et ta mère ?
+Mon père travaille dans une entreprise d'informatique, et ma mère est enseignante en école primaire.
+Le travail de ton père est-il prenant ?
+Son travail est très prenant, il est très fatigué tous les jours.
+Et ta mère ?
+Elle aime les enfants, elle dit que l'enseignement n'est pas fatigant.
+Mon père est aussi enseignant, il enseigne le français à l'université.`,
 	},
 	{
 		lesson: "1-5",
@@ -121,6 +148,15 @@ Jiawen, are you also studying in America?
 No, I usually live in Taiwan. Now that the school is on holiday, I'm coming to America to play.
 Welcome to America. Where do you want to play?
 I want to go to Disneyland, and I want to go to national parks.`,
+		french: `Gloria, ça fait longtemps qu'on ne s'est pas vus.
+Bonjour, ça fait longtemps.
+Voici mon frère, Wang Jiawen. Jiawen, voici mon amie, Gloria.
+Bonjour, Jiawen, je suis très heureuse de te rencontrer.
+Gloria, je suis également très heureux de te rencontrer.
+Jiawen, tu étudies aussi aux États-Unis ?
+Non, je vis normalement à Taïwan. L'école est en vacances maintenant, alors je suis venu jouer aux États-Unis.
+Bienvenue aux États-Unis. Où aimerais-tu aller ?
+Je veux aller à Disneyland et aussi visiter des parcs nationaux.`,
 	},
 	{
 		lesson: "1-6",
@@ -148,6 +184,14 @@ Je n'aime pas le sport. J'aime chanter, écouter de la musique et danser.
 Mon frère et moi aimons aussi chanter, mais nous n'aimons pas danser.
 J'aime aussi regarder la télé, je regarde la télé à la maison le soir.
 Je suis à Taïwan et j'aime aller courir dans le parc la nuit.`,
+		french: `Jiawen, aimes-tu le sport ?
+J'aime le sport, j'aime courir habituellement.
+Qu'est-ce que ton frère aime faire habituellement ?
+Il aime courir habituellement et jouer au tennis le week-end. Et toi ?
+Je n'aime pas le sport. J'aime chanter, écouter de la musique et danser.
+Mon frère et moi aimons aussi chanter, mais nous n'aimons pas danser.
+J'aime aussi regarder la télévision, je regarde la télévision à la maison le soir.
+À Taïwan, j'aime aller courir dans le parc le soir.`,
 	},
 	{
 		lesson: "1-7",
@@ -184,6 +228,17 @@ My cell phone number is (517) 3604259.
 OK, Gloria.
 thank you!
 You are welcome! See you.`,
+		french: `Allô, Banque Tai Yi, bonjour !
+Allô, bonjour ! Madame Lin Meimei est-elle là ?
+Madame Lin n'est pas au bureau pour le moment, puis-je savoir qui demande ?
+Je suis Gloria, de la compagnie Bei Dian. Pourriez-vous me dire quand Madame Lin sera de retour ?
+Gloria, Madame Lin sera de retour cet après-midi.
+Pourriez-vous lui demander de me rappeler à son retour ?
+Puis-je avoir votre numéro de portable ?
+Mon numéro de portable est le (517) 360-4259.
+D'accord, Gloria.
+Merci beaucoup !
+Je vous en prie, au revoir.`,
 	},
 	{
 		lesson: "1-8",
@@ -214,6 +269,15 @@ Brother: OK, let’s go shopping tonight. what else do you want?
 Jiawen: Invite me to a big meal, okay?
 Brother: OK, no problem.
 Jiawen: Thank you, brother.`,
+		french: `Jiawen : Grand frère, quel jour sommes-nous demain ?
+Grand frère : Demain, nous sommes le 11 août. Oh ! C'est ton anniversaire demain.
+Jiawen : Oui ! Demain, c'est mon 17e anniversaire.
+Grand frère : Jiawen, je te souhaite un joyeux anniversaire. Quel cadeau d'anniversaire veux-tu ?
+Jiawen : Je veux une paire de chaussures de sport, c'est possible ?
+Grand frère : D'accord, nous irons les acheter ce soir. Tu veux autre chose ?
+Jiawen : Tu m'invites à un grand repas, ça te va ?
+Grand frère : Oui, pas de problème.
+Jiawen : Merci grand frère.`,
 	},
 	{
 		lesson: "1-9",
@@ -253,5 +317,17 @@ Great, Mingwen, what time do you finish class?
 I finish class at five o'clock.
 How about we meet at the restaurant at 6:30 on Friday night?
 Very good! The beef noodles in that restaurant are the best. We are on Friday.`,
+		french: `Gloria, ça fait longtemps qu'on ne s'est pas vus.
+Bonjour. Mingwen, voici ma collègue, Lisa.
+Lisa, très heureuse de te rencontrer.
+Moi aussi, très heureuse de te rencontrer.
+Mingwen, samedi soir, nous allons au restaurant Delicious pour dîner, tu veux venir avec nous ?
+Samedi, ça ne va pas, vendredi, ça irait ?
+Vendredi, ça me va aussi. Lisa, tu es disponible vendredi ?
+Pas de problème.
+Super, Mingwen, tu finis les cours à quelle heure ?
+Je finis à cinq heures.
+On se voit vendredi soir à six heures et demie au restaurant, ça te va ?
+Parfait ! Le bœuf nouille de ce restaurant est le meilleur. On se voit vendredi.`,
 	},
 ];

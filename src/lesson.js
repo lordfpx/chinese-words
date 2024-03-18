@@ -1,5 +1,8 @@
 import { texts1 } from "./data/texts-1";
 import { texts2 } from "./data/texts-2";
+import language from "./getLanguage";
+
+let translation;
 
 const texts = texts1.concat(texts2);
 
@@ -16,13 +19,15 @@ updateLesson(activeLesson || "1-1");
 function updateLesson(lessonNbr) {
 	lessonTitle.textContent = `Lesson ${lessonNbr}`;
 
-	const { chinese, pinyin, english } = texts.find(
+	const { chinese, pinyin, english, french } = texts.find(
 		(lesson) => lesson.lesson === lessonNbr
 	);
 
+	translation = language === "english" ? english : french;
+
 	const chineseLines = chinese.split("\n");
 	const pinyinLines = pinyin.split("\n");
-	const englishLines = english.split("\n");
+	const translationLines = translation.split("\n");
 
 	chineseLines.forEach((line, index) => {
 		const lineNode = document.createElement("div");
@@ -32,7 +37,7 @@ function updateLesson(lessonNbr) {
 				${line}
 				</p>
 				<p class="text-lg lg:text-2xl font-mono">${pinyinLines[index]}</p>
-				<p class="text-slate-500 font-mono">${englishLines[index]}</p>
+				<p class="text-slate-500 font-mono">${translationLines[index]}</p>
 			`;
 		lessonContent.appendChild(lineNode);
 	});

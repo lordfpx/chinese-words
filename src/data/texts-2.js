@@ -34,6 +34,17 @@ Rain can be troublesome.
 Right, I can’t go out for a run when it rains.
 The weather forecast says it might rain tomorrow.
 I hope it will be sunny tomorrow.`,
+		french: `Lisa, ça fait longtemps. Tu es venue courir ?
+Oui ! Le temps est tellement agréable aujourd'hui, courir ici est vraiment confortable.
+L'été ici est plus agréable que l'été à Taïwan.
+Comment est le climat à Taïwan ?
+Le printemps et l'automne à Taïwan sont très confortables, ni froids ni chauds, mais l'été est trop chaud.
+Et l'hiver ? Est-ce qu'il neige ?
+L'hiver n'est pas très froid, et il ne neige pas, mais il pleut souvent.
+La pluie peut être ennuyeuse.
+Exact, je ne peux pas sortir courir quand il pleut.
+La météo dit qu'il pourrait pleuvoir demain.
+J'espère qu'il fera beau demain.`,
 	},
 	{
 		lesson: "2-2",
@@ -70,6 +81,17 @@ Right, she likes to travel, a backpack would be very useful. We can also buy her
 What time shall we leave on Saturday?
 How about 1 p.m.?
 Okay, thanks big brother.`,
+		french: `Grand frère, je retourne à Taïwan la semaine prochaine. Ce samedi, je veux acheter des cadeaux pour papa et maman.
+Qu'est-ce que tu veux leur acheter ?
+Je veux acheter un chapeau pour papa, un vêtement pour maman, et aussi deux boîtes de chocolat.
+Tu ne veux pas acheter en ligne ? C'est plus pratique d'acheter dans les magasins en ligne.
+Les produits des magasins en ligne sont bons et bon marché. Mais comme j'aime faire du shopping, je préfère aller au grand magasin.
+D'accord, je suis libre ce week-end, nous irons au grand magasin.
+Je veux aussi acheter un sac à dos pour ma sœur.
+Oui, elle aime voyager, un sac à dos serait très utile. On peut aussi lui acheter des lunettes de soleil.
+À quelle heure sortons-nous samedi ?
+À une heure de l'après-midi, ça te va ?
+Oui, merci grand frère.`,
 	},
 	{
 		lesson: "2-3",
@@ -107,6 +129,17 @@ I heard the buns in this restaurant are not bad.
 Then, let's also order two red bean paste buns, how about that?
 Good. Miss, we want to order.
 May I ask what the three of you would like to order?`,
+		french: `Lia, le poisson braisé de ce restaurant est très bon, extrêmement délicieux.
+J'adore manger du poisson, j'aime tout type de poisson.
+Lisa, tu préfères du tofu ou des légumes verts ?
+Je veux du tofu et des légumes verts aussi.
+D'accord, commandons un poisson braisé, un tofu frit, une assiette de légumes sautés et trois bols de riz blanc. Vous voulez autre chose ?
+Commandons un bol de soupe aigre-piquante ! La soupe aigre-piquante est à la fois aigre et piquante, vraiment délicieuse à boire !
+Super ! Je veux aussi de la soupe aigre-piquante. Je veux aussi une bouteille de bière.
+J'ai entendu dire que les baozi de ce restaurant sont bien faits.
+Alors, commandons également deux baozi à la pâte de haricots, ça vous va ?
+Bien. Mademoiselle, nous voudrions passer commande.
+Que souhaitent commander les trois personnes ?`,
 	},
 	{
 		lesson: "2-4",
@@ -155,5 +188,20 @@ Okay, I'll have one.
 Miss, I'll have the same, one chicken sandwich.
 Miss, we would also like two glasses of iced water.
 Alright, one large hot coffee with milk, no sugar, one small iced black tea, one piece of cake, two chicken sandwiches, and two glasses of iced water. Please wait a moment, coming right up.`,
+		french: `Mademoiselle, je voudrais un café, avec du lait mais sans sucre.
+D'accord, vous le voulez chaud ou froid ?
+Chaud.
+Vous voulez une grande, moyenne, ou petite taille ?
+Une grande taille.
+Que désirez-vous boire ?
+Je voudrais un thé glacé en petite taille.
+Autre chose ?
+Je veux aussi un morceau de gâteau. Lisa, tu en veux ?
+Le gâteau est trop sucré, je préfère quelque chose de salé. Mademoiselle, avez-vous des sandwiches au poulet ?
+Oui, si vous commandez un sandwich au poulet, nous vous offrons une boisson.
+D'accord, je prends un.
+Mademoiselle, je prendrai la même chose, un sandwich au poulet.
+Nous voulons aussi deux verres d'eau glacée.
+Très bien, un grand café chaud avec du lait, sans sucre, un petit thé glacé, un morceau de gâteau, deux sandwiches au poulet, et deux verres d'eau glacée. Veuillez patienter un moment, ça arrive.`,
 	},
 ];
