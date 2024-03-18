@@ -106,8 +106,7 @@ Oui, merci grand frère.`,
 那麼，我們也點兩個豆沙包，怎麼樣？
 好。小姐，我們要點菜。
 請問三位要點什麼？`,
-		pinyin: `Lìyà, zhèi jiā cāntīng de hóngshāo yú zuò de hěn hǎo, fēicháng hào chī.
-Lìyà, zhè jiā cāntīng de hóngshāo yú zuò de hěn hǎo, fēicháng hǎochī.
+		pinyin: `Lìyà, zhè jiā cāntīng de hóngshāo yú zuò de hěn hǎo, fēicháng hǎochī.
 Wǒ zuì xǐhuān chī yú, shénme yú dōu ài chī.
 Lìshā, nǐ xiǎng chī dòufu háishì qīngcài?
 Wǒ xiǎng chī dòufu, yě xiǎng chī qīngcài.
